@@ -321,6 +321,7 @@ while continueRoutine:
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        ioServer.getDevice('tracker').sendMessage("key board escape")
         core.quit()
     
     # check if all components have finished
@@ -437,12 +438,19 @@ thisExp.addLoop(T1w_LIBRE)  # add the loop to the experiment
 thisT1w_LIBRE = T1w_LIBRE.trialList[0]  # so we can initialise stimuli with some values
 # abbreviate parameter names if possible (e.g. rgb = thisT1w_LIBRE.rgb)
 if thisT1w_LIBRE != None:
-    ioServer.getDevice('tracker').sendMessage("start stimuli")
     for paramName in thisT1w_LIBRE:
         exec('{} = thisT1w_LIBRE[paramName]'.format(paramName))
 
 for thisT1w_LIBRE in T1w_LIBRE:
     currentLoop = T1w_LIBRE
+    current_rep_index = T1w_LIBRE.thisRepN
+    if current_rep_index == 0:
+        # now it is the first repetition
+        ioServer.getDevice('tracker').sendMessage("T1w_LIBRE stimuli start")
+    if T1w_LIBRE.thisRepN % 10 == 0:
+        info = f"Stimuli after {T1w_LIBRE.thisRepN} seconds..."
+        ioServer.getDevice('tracker').sendMessage(info)
+        
     # abbreviate parameter names if possible (e.g. rgb = thisT1w_LIBRE.rgb)
     if thisT1w_LIBRE != None:
         for paramName in thisT1w_LIBRE:
@@ -678,6 +686,7 @@ for thisT1w_LIBRE in T1w_LIBRE:
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            ioServer.getDevice('tracker').sendMessage("key board escape")
             core.quit()
         
         # check if all components have finished
@@ -768,6 +777,7 @@ while continueRoutine:
             # add timestamp to datafile
             thisExp.timestampOnFlip(win, 'ET_stop.stopped')
             ET_stop.status = FINISHED
+            ioServer.getDevice('tracker').sendMessage("stop tracker block")
     
     # *key_resp_3* updates
     waitOnFlip = False
@@ -795,6 +805,7 @@ while continueRoutine:
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        ioServer.getDevice('tracker').sendMessage("key board escape")
         core.quit()
     
     # check if all components have finished
