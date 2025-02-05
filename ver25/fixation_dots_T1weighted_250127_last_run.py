@@ -672,7 +672,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp.status == STARTED and not waitOnFlip:
             theseKeys = key_resp.getKeys(keyList=['s'], ignoreKeys=["escape"], waitRelease=False)
-            ioServer.getDevice('tracker').sendMessage("-----Key s detected----------")
+            # ioServer.getDevice('tracker').sendMessage("-----Key s detected----------")
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
@@ -810,6 +810,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             etRecord.status = STARTED
             ioServer.getDevice('tracker').sendMessage("Hello tracker record")
             etRecord.start()
+            
         if etRecord.status == STARTED:
             etRecord.tStop = t  # not accounting for scr refresh
             etRecord.tStopRefresh = tThisFlipGlobal  # on global time
@@ -889,7 +890,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # now it is the first repetition
             ioServer.getDevice('tracker').sendMessage("T1w_LIBRE stimuli start")
         if T1w_LIBRE.thisRepN % 10 == 0:
-            info = f"Stimuli after {T1w_LIBRE.thisRepN/10} seconds..."
+            info = f"Stimuli after {T1w_LIBRE.thisRepN * 10} seconds..."
             ioServer.getDevice('tracker').sendMessage(info)
         thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
         if thisSession is not None:

@@ -1,0 +1,21 @@
+10.0802 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662badd00>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662badca0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bad790>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fd662bce7f0>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.0803 	EXP 	window1: backgroundImage = ''
+10.0803 	EXP 	window1: backgroundFit = 'none'
+10.0805 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.0806 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.0831 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.0835 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.1073 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.1073 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.1077 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.1081 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x7fd662bade50>
+10.1150 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.1150 	EXP 	window1: recordFrameIntervals = False
+10.2940 	EXP 	window1: recordFrameIntervals = True
+11.1318 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.1319 	EXP 	window1: mouseVisible = True
+11.1462 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+42.9082 	EXP 	window1: mouseVisible = True
