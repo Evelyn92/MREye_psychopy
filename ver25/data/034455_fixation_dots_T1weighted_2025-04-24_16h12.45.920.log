@@ -1,0 +1,1585 @@
+18.9267 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BC70>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BC10>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BA60>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000020328E1C1C0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+18.9268 	EXP 	window1: backgroundImage = ''
+18.9268 	EXP 	window1: backgroundFit = 'none'
+18.9270 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9271 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9285 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9290 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9557 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9558 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9563 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9566 	EXP 	window1: mouseVisible = <method-wrapper '__getattribute__' of attributeSetter object at 0x0000020328D2BD90>
+18.9759 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+18.9759 	EXP 	window1: recordFrameIntervals = False
+19.1455 	EXP 	window1: recordFrameIntervals = True
+19.3439 	EXP 	Screen (0) actual frame rate measured at 60.44Hz
+19.3439 	EXP 	window1: recordFrameIntervals = False
+19.3440 	EXP 	window1: mouseVisible = True
+19.3474 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+21.1104 	EXP 	fixation_dots_T1weighted: status = STARTED
+21.1110 	EXP 	window1: mouseVisible = True
+21.1443 	EXP 	Created waiting_trigger = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='waiting_trigger', opacity=1.0, ori=0.0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.7)
+21.1444 	EXP 	window1: mouseVisible = True
+21.1524 	EXP 	Created fix_desc = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='fix_desc', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.0)
+21.1525 	EXP 	window1: mouseVisible = True
+21.1553 	EXP 	Created dot_1 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([ 1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([ 1., -1., -1.]), interpolate=True, lineColor=array([ 1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([ 1., -1., -1.]), lineWidth=1.0, name='dot_1', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1554 	EXP 	window1: mouseVisible = True
+21.1575 	EXP 	Created dot_2 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1.    , -1.    ,  0.0902]), fillColorSpace='rgb', fillRGB=array([-1.    , -1.    ,  0.0902]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='dot_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1575 	EXP 	window1: mouseVisible = True
+21.1594 	EXP 	Created dot_3 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([ 1.    ,  0.0745, -0.4667]), fillColorSpace='rgb', fillRGB=array([ 1.    ,  0.0745, -0.4667]), interpolate=True, lineColor=array([ 1.    ,  0.0745, -0.4667]), lineColorSpace='rgb', lineRGB=array([ 1.    ,  0.0745, -0.4667]), lineWidth=1.0, name='dot_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1594 	EXP 	window1: mouseVisible = True
+21.1613 	EXP 	Created dot_4 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([-1,  1,  1]), fillColorSpace='rgb', fillRGB=array([-1,  1,  1]), interpolate=True, lineColor=array([-1.,  1.,  1.]), lineColorSpace='rgb', lineRGB=array([-1,  1,  1]), lineWidth=1.0, name='dot_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1614 	EXP 	window1: mouseVisible = True
+21.1632 	EXP 	Created dot_5 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([0.451 , 0.4275, 0.4353]), fillColorSpace='rgb', fillRGB=array([0.451 , 0.4275, 0.4353]), interpolate=True, lineColor=array([0.451 , 0.4275, 0.4353]), lineColorSpace='rgb', lineRGB=array([0.451 , 0.4275, 0.4353]), lineWidth=1.0, name='dot_5', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1633 	EXP 	window1: mouseVisible = True
+21.1651 	EXP 	Created dot_6 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([ 1.    ,  0.7647, -0.6235]), fillColorSpace='rgb', fillRGB=array([ 1.    ,  0.7647, -0.6235]), interpolate=True, lineColor=array([ 1.    ,  0.7647, -0.6235]), lineColorSpace='rgb', lineRGB=array([ 1.    ,  0.7647, -0.6235]), lineWidth=1.0, name='dot_6', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1651 	EXP 	window1: mouseVisible = True
+21.1670 	EXP 	Created dot_7 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([ 0.2235, -1.    ,  1.    ]), fillColorSpace='rgb', fillRGB=array([ 0.2235, -1.    ,  1.    ]), interpolate=True, lineColor=array([-0.15, -0.1 ,  1.  ]), lineColorSpace='rgb', lineRGB=array([-0.15, -0.1 ,  1.  ]), lineWidth=1.0, name='dot_7', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1670 	EXP 	window1: mouseVisible = True
+21.1690 	EXP 	Created dot_8 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([ 0.3412, -0.1294, -0.5059]), fillColorSpace='rgb', fillRGB=array([ 0.3412, -0.1294, -0.5059]), interpolate=True, lineColor=array([ 0.3412, -0.1294, -0.5059]), lineColorSpace='rgb', lineRGB=array([ 0.3412, -0.1294, -0.5059]), lineWidth=1.0, name='dot_8', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1691 	EXP 	window1: mouseVisible = True
+21.1713 	EXP 	Created dot_9 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([ 0.6078, -0.2784, -0.2784]), fillColorSpace='rgb', fillRGB=array([ 0.6078, -0.2784, -0.2784]), interpolate=True, lineColor=array([ 0.6078, -0.2784, -0.2784]), lineColorSpace='rgb', lineRGB=array([ 0.6078, -0.2784, -0.2784]), lineWidth=1.0, name='dot_9', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1714 	EXP 	window1: mouseVisible = True
+21.1733 	EXP 	Created dot_10 = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-9.0, draggable=False, fillColor=array([-0.0039,  1.    ,  0.6627]), fillColorSpace='rgb', fillRGB=array([-0.0039,  1.    ,  0.6627]), interpolate=True, lineColor=array([-0.0039,  1.    ,  0.6627]), lineColorSpace='rgb', lineRGB=array([-0.0039,  1.    ,  0.6627]), lineWidth=1.0, name='dot_10', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.04, 0.04]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.1734 	EXP 	window1: mouseVisible = True
+21.1766 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text="End press 't'", units='norm', win=Window(...), wrapWidth=1)
+0.0135 	EXP 	window1: mouseVisible = True
+0.0159 	EXP 	Created calibration_2Target = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=2.0, name='calibration_2Target', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.3, 0.3]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+0.0162 	EXP 	window1: mouseVisible = True
+0.0186 	EXP 	Created calibration_2TargetInner = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, draggable=False, fillColor=array([-1.        ,  0.00392157, -1.        ]), fillColorSpace='rgb', fillRGB=array([-1.        ,  0.00392157, -1.        ]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=2.0, name='calibration_2TargetInner', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.14, 0.14]), units='norm', vertices=ndarray(...), win=Window(...), windingRule=None)
+371.5577 	EXP 	waiting_trigger: autoDraw = True
+371.5577 	EXP 	fix_desc: autoDraw = True
+579.3743 	EXP 	eyetracker.clearEvents()
+579.8754 	EXP 	eyetracker.setRecordingState(True)
+579.8783 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+579.8818 	DATA 	Keypress: s
+579.9004 	EXP 	waiting_trigger: autoDraw = False
+579.9004 	EXP 	fix_desc: autoDraw = False
+579.9004 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+579.9004 	EXP 	dot_1: autoDraw = True
+580.8850 	EXP 	dot_2: autoDraw = True
+580.9014 	EXP 	dot_1: autoDraw = False
+581.8698 	DATA 	Keypress: s
+581.8853 	EXP 	dot_2: autoDraw = False
+581.8853 	EXP 	dot_3: autoDraw = True
+582.8857 	EXP 	dot_3: autoDraw = False
+582.8857 	EXP 	dot_4: autoDraw = True
+583.8863 	EXP 	dot_4: autoDraw = False
+583.8863 	EXP 	dot_5: autoDraw = True
+584.3697 	DATA 	Keypress: s
+584.8851 	EXP 	dot_5: autoDraw = False
+584.8851 	EXP 	dot_6: autoDraw = True
+585.8849 	EXP 	dot_6: autoDraw = False
+585.8849 	EXP 	dot_7: autoDraw = True
+586.8724 	DATA 	Keypress: s
+586.8854 	EXP 	dot_7: autoDraw = False
+586.8854 	EXP 	dot_8: autoDraw = True
+587.8849 	EXP 	dot_8: autoDraw = False
+587.8849 	EXP 	dot_9: autoDraw = True
+588.8855 	EXP 	dot_9: autoDraw = False
+588.8855 	EXP 	dot_10: autoDraw = True
+589.3694 	DATA 	Keypress: s
+589.8686 	EXP 	New trial (rep=1, index=0): <Trial 1 (0 in rep 1) data={'thisN': 1, 'thisTrialN': 0, 'thisRepN': 1}>
+589.8850 	EXP 	dot_10: autoDraw = False
+589.8850 	EXP 	dot_1: autoDraw = False
+589.8850 	EXP 	dot_2: autoDraw = False
+589.8850 	EXP 	dot_3: autoDraw = False
+589.8850 	EXP 	dot_4: autoDraw = False
+589.8850 	EXP 	dot_5: autoDraw = False
+589.8850 	EXP 	dot_6: autoDraw = False
+589.8850 	EXP 	dot_7: autoDraw = False
+589.8850 	EXP 	dot_8: autoDraw = False
+589.8850 	EXP 	dot_9: autoDraw = False
+589.8850 	EXP 	dot_10: autoDraw = False
+589.8850 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+589.8850 	EXP 	dot_1: autoDraw = True
+590.8859 	EXP 	dot_1: autoDraw = False
+590.8859 	EXP 	dot_2: autoDraw = True
+591.8850 	EXP 	dot_2: autoDraw = False
+591.8850 	EXP 	dot_3: autoDraw = True
+591.8859 	DATA 	Keypress: s
+592.8853 	EXP 	dot_3: autoDraw = False
+592.8853 	EXP 	dot_4: autoDraw = True
+593.8853 	EXP 	dot_4: autoDraw = False
+593.8853 	EXP 	dot_5: autoDraw = True
+594.3861 	DATA 	Keypress: s
+594.8846 	EXP 	dot_5: autoDraw = False
+594.8846 	EXP 	dot_6: autoDraw = True
+595.8852 	EXP 	dot_6: autoDraw = False
+595.8852 	EXP 	dot_7: autoDraw = True
+596.8848 	EXP 	dot_7: autoDraw = False
+596.8848 	EXP 	dot_8: autoDraw = True
+596.8860 	DATA 	Keypress: s
+597.8848 	EXP 	dot_8: autoDraw = False
+597.8848 	EXP 	dot_9: autoDraw = True
+598.8847 	EXP 	dot_9: autoDraw = False
+598.8847 	EXP 	dot_10: autoDraw = True
+599.3851 	DATA 	Keypress: s
+599.8682 	EXP 	New trial (rep=2, index=0): <Trial 2 (0 in rep 2) data={'thisN': 2, 'thisTrialN': 0, 'thisRepN': 2}>
+599.8848 	EXP 	dot_10: autoDraw = False
+599.8848 	EXP 	dot_1: autoDraw = False
+599.8848 	EXP 	dot_2: autoDraw = False
+599.8848 	EXP 	dot_3: autoDraw = False
+599.8848 	EXP 	dot_4: autoDraw = False
+599.8848 	EXP 	dot_5: autoDraw = False
+599.8848 	EXP 	dot_6: autoDraw = False
+599.8848 	EXP 	dot_7: autoDraw = False
+599.8848 	EXP 	dot_8: autoDraw = False
+599.8848 	EXP 	dot_9: autoDraw = False
+599.8848 	EXP 	dot_10: autoDraw = False
+599.8848 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+599.8848 	EXP 	dot_1: autoDraw = True
+600.8847 	EXP 	dot_1: autoDraw = False
+600.8847 	EXP 	dot_2: autoDraw = True
+601.8847 	EXP 	dot_2: autoDraw = False
+601.8847 	EXP 	dot_3: autoDraw = True
+601.9028 	DATA 	Keypress: s
+602.8847 	EXP 	dot_3: autoDraw = False
+602.8847 	EXP 	dot_4: autoDraw = True
+603.8852 	EXP 	dot_4: autoDraw = False
+603.8852 	EXP 	dot_5: autoDraw = True
+604.4020 	DATA 	Keypress: s
+604.8847 	EXP 	dot_5: autoDraw = False
+604.8847 	EXP 	dot_6: autoDraw = True
+605.8848 	EXP 	dot_6: autoDraw = False
+605.8848 	EXP 	dot_7: autoDraw = True
+606.8847 	EXP 	dot_7: autoDraw = False
+606.8847 	EXP 	dot_8: autoDraw = True
+606.9018 	DATA 	Keypress: s
+607.8847 	EXP 	dot_8: autoDraw = False
+607.8847 	EXP 	dot_9: autoDraw = True
+608.8846 	EXP 	dot_9: autoDraw = False
+608.8846 	EXP 	dot_10: autoDraw = True
+609.4022 	DATA 	Keypress: s
+609.8694 	EXP 	New trial (rep=3, index=0): <Trial 3 (0 in rep 3) data={'thisN': 3, 'thisTrialN': 0, 'thisRepN': 3}>
+609.8848 	EXP 	dot_10: autoDraw = False
+609.8848 	EXP 	dot_1: autoDraw = False
+609.8848 	EXP 	dot_2: autoDraw = False
+609.8848 	EXP 	dot_3: autoDraw = False
+609.8848 	EXP 	dot_4: autoDraw = False
+609.8848 	EXP 	dot_5: autoDraw = False
+609.8848 	EXP 	dot_6: autoDraw = False
+609.8848 	EXP 	dot_7: autoDraw = False
+609.8848 	EXP 	dot_8: autoDraw = False
+609.8848 	EXP 	dot_9: autoDraw = False
+609.8848 	EXP 	dot_10: autoDraw = False
+609.8848 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+609.8848 	EXP 	dot_1: autoDraw = True
+610.8843 	EXP 	dot_1: autoDraw = False
+610.8843 	EXP 	dot_2: autoDraw = True
+611.8849 	EXP 	dot_2: autoDraw = False
+611.8849 	EXP 	dot_3: autoDraw = True
+611.9021 	DATA 	Keypress: s
+612.8844 	EXP 	dot_3: autoDraw = False
+612.8844 	EXP 	dot_4: autoDraw = True
+613.8844 	EXP 	dot_4: autoDraw = False
+613.8844 	EXP 	dot_5: autoDraw = True
+614.4019 	DATA 	Keypress: s
+614.8845 	EXP 	dot_5: autoDraw = False
+614.8845 	EXP 	dot_6: autoDraw = True
+615.8845 	EXP 	dot_6: autoDraw = False
+615.8845 	EXP 	dot_7: autoDraw = True
+616.8843 	EXP 	dot_7: autoDraw = False
+616.8843 	EXP 	dot_8: autoDraw = True
+616.9190 	DATA 	Keypress: s
+617.8843 	EXP 	dot_8: autoDraw = False
+617.8843 	EXP 	dot_9: autoDraw = True
+618.8846 	EXP 	dot_9: autoDraw = False
+618.8846 	EXP 	dot_10: autoDraw = True
+619.4190 	DATA 	Keypress: s
+619.8681 	EXP 	New trial (rep=4, index=0): <Trial 4 (0 in rep 4) data={'thisN': 4, 'thisTrialN': 0, 'thisRepN': 4}>
+619.8841 	EXP 	dot_10: autoDraw = False
+619.8841 	EXP 	dot_1: autoDraw = False
+619.8841 	EXP 	dot_2: autoDraw = False
+619.8841 	EXP 	dot_3: autoDraw = False
+619.8841 	EXP 	dot_4: autoDraw = False
+619.8841 	EXP 	dot_5: autoDraw = False
+619.8841 	EXP 	dot_6: autoDraw = False
+619.8841 	EXP 	dot_7: autoDraw = False
+619.8841 	EXP 	dot_8: autoDraw = False
+619.8841 	EXP 	dot_9: autoDraw = False
+619.8841 	EXP 	dot_10: autoDraw = False
+619.8841 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+619.8841 	EXP 	dot_1: autoDraw = True
+620.8848 	EXP 	dot_1: autoDraw = False
+620.8848 	EXP 	dot_2: autoDraw = True
+621.8842 	EXP 	dot_2: autoDraw = False
+621.8842 	EXP 	dot_3: autoDraw = True
+621.9189 	DATA 	Keypress: s
+622.8842 	EXP 	dot_3: autoDraw = False
+622.8842 	EXP 	dot_4: autoDraw = True
+623.8851 	EXP 	dot_4: autoDraw = False
+623.8851 	EXP 	dot_5: autoDraw = True
+624.4189 	DATA 	Keypress: s
+624.8844 	EXP 	dot_5: autoDraw = False
+624.8844 	EXP 	dot_6: autoDraw = True
+625.8843 	EXP 	dot_6: autoDraw = False
+625.8843 	EXP 	dot_7: autoDraw = True
+626.8841 	EXP 	dot_7: autoDraw = False
+626.8841 	EXP 	dot_8: autoDraw = True
+626.9185 	DATA 	Keypress: s
+627.8840 	EXP 	dot_8: autoDraw = False
+627.8840 	EXP 	dot_9: autoDraw = True
+628.8844 	EXP 	dot_9: autoDraw = False
+628.8844 	EXP 	dot_10: autoDraw = True
+629.4183 	DATA 	Keypress: s
+629.8684 	EXP 	New trial (rep=5, index=0): <Trial 5 (0 in rep 5) data={'thisN': 5, 'thisTrialN': 0, 'thisRepN': 5}>
+629.8839 	EXP 	dot_10: autoDraw = False
+629.8839 	EXP 	dot_1: autoDraw = False
+629.8839 	EXP 	dot_2: autoDraw = False
+629.8839 	EXP 	dot_3: autoDraw = False
+629.8839 	EXP 	dot_4: autoDraw = False
+629.8839 	EXP 	dot_5: autoDraw = False
+629.8839 	EXP 	dot_6: autoDraw = False
+629.8839 	EXP 	dot_7: autoDraw = False
+629.8839 	EXP 	dot_8: autoDraw = False
+629.8839 	EXP 	dot_9: autoDraw = False
+629.8839 	EXP 	dot_10: autoDraw = False
+629.8839 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+629.8839 	EXP 	dot_1: autoDraw = True
+630.8842 	EXP 	dot_1: autoDraw = False
+630.8842 	EXP 	dot_2: autoDraw = True
+631.8840 	EXP 	dot_2: autoDraw = False
+631.8840 	EXP 	dot_3: autoDraw = True
+631.9347 	DATA 	Keypress: s
+632.8847 	EXP 	dot_3: autoDraw = False
+632.8847 	EXP 	dot_4: autoDraw = True
+633.8841 	EXP 	dot_4: autoDraw = False
+633.8841 	EXP 	dot_5: autoDraw = True
+634.4194 	DATA 	Keypress: s
+634.8838 	EXP 	dot_5: autoDraw = False
+634.8838 	EXP 	dot_6: autoDraw = True
+635.8836 	EXP 	dot_6: autoDraw = False
+635.8836 	EXP 	dot_7: autoDraw = True
+636.8841 	EXP 	dot_7: autoDraw = False
+636.8841 	EXP 	dot_8: autoDraw = True
+636.9347 	DATA 	Keypress: s
+637.8840 	EXP 	dot_8: autoDraw = False
+637.8840 	EXP 	dot_9: autoDraw = True
+638.8839 	EXP 	dot_9: autoDraw = False
+638.8839 	EXP 	dot_10: autoDraw = True
+639.4239 	DATA 	Keypress: s
+639.8674 	EXP 	New trial (rep=6, index=0): <Trial 6 (0 in rep 6) data={'thisN': 6, 'thisTrialN': 0, 'thisRepN': 6}>
+639.8841 	EXP 	dot_10: autoDraw = False
+639.8841 	EXP 	dot_1: autoDraw = False
+639.8841 	EXP 	dot_2: autoDraw = False
+639.8841 	EXP 	dot_3: autoDraw = False
+639.8841 	EXP 	dot_4: autoDraw = False
+639.8841 	EXP 	dot_5: autoDraw = False
+639.8841 	EXP 	dot_6: autoDraw = False
+639.8841 	EXP 	dot_7: autoDraw = False
+639.8841 	EXP 	dot_8: autoDraw = False
+639.8841 	EXP 	dot_9: autoDraw = False
+639.8841 	EXP 	dot_10: autoDraw = False
+639.8841 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+639.8841 	EXP 	dot_1: autoDraw = True
+640.8842 	EXP 	dot_1: autoDraw = False
+640.8842 	EXP 	dot_2: autoDraw = True
+641.8841 	EXP 	dot_2: autoDraw = False
+641.8841 	EXP 	dot_3: autoDraw = True
+641.9345 	DATA 	Keypress: s
+642.8835 	EXP 	dot_3: autoDraw = False
+642.8835 	EXP 	dot_4: autoDraw = True
+643.8835 	EXP 	dot_4: autoDraw = False
+643.8835 	EXP 	dot_5: autoDraw = True
+644.4346 	DATA 	Keypress: s
+644.8842 	EXP 	dot_5: autoDraw = False
+644.8842 	EXP 	dot_6: autoDraw = True
+645.8842 	EXP 	dot_6: autoDraw = False
+645.8842 	EXP 	dot_7: autoDraw = True
+646.8839 	EXP 	dot_7: autoDraw = False
+646.8839 	EXP 	dot_8: autoDraw = True
+646.9343 	DATA 	Keypress: s
+647.8836 	EXP 	dot_8: autoDraw = False
+647.8836 	EXP 	dot_9: autoDraw = True
+648.8835 	EXP 	dot_9: autoDraw = False
+648.8835 	EXP 	dot_10: autoDraw = True
+649.4513 	DATA 	Keypress: s
+649.8673 	EXP 	New trial (rep=7, index=0): <Trial 7 (0 in rep 7) data={'thisN': 7, 'thisTrialN': 0, 'thisRepN': 7}>
+649.8837 	EXP 	dot_10: autoDraw = False
+649.8837 	EXP 	dot_1: autoDraw = False
+649.8837 	EXP 	dot_2: autoDraw = False
+649.8837 	EXP 	dot_3: autoDraw = False
+649.8837 	EXP 	dot_4: autoDraw = False
+649.8837 	EXP 	dot_5: autoDraw = False
+649.8837 	EXP 	dot_6: autoDraw = False
+649.8837 	EXP 	dot_7: autoDraw = False
+649.8837 	EXP 	dot_8: autoDraw = False
+649.8837 	EXP 	dot_9: autoDraw = False
+649.8837 	EXP 	dot_10: autoDraw = False
+649.8837 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+649.8837 	EXP 	dot_1: autoDraw = True
+650.8839 	EXP 	dot_1: autoDraw = False
+650.8839 	EXP 	dot_2: autoDraw = True
+651.8835 	EXP 	dot_2: autoDraw = False
+651.8835 	EXP 	dot_3: autoDraw = True
+651.9361 	DATA 	Keypress: s
+652.8837 	EXP 	dot_3: autoDraw = False
+652.8837 	EXP 	dot_4: autoDraw = True
+653.8834 	EXP 	dot_4: autoDraw = False
+653.8834 	EXP 	dot_5: autoDraw = True
+654.4517 	DATA 	Keypress: s
+654.8842 	EXP 	dot_5: autoDraw = False
+654.8842 	EXP 	dot_6: autoDraw = True
+655.8833 	EXP 	dot_6: autoDraw = False
+655.8833 	EXP 	dot_7: autoDraw = True
+656.8833 	EXP 	dot_7: autoDraw = False
+656.8833 	EXP 	dot_8: autoDraw = True
+656.9515 	DATA 	Keypress: s
+657.8836 	EXP 	dot_8: autoDraw = False
+657.8836 	EXP 	dot_9: autoDraw = True
+658.8835 	EXP 	dot_9: autoDraw = False
+658.8835 	EXP 	dot_10: autoDraw = True
+659.4514 	DATA 	Keypress: s
+659.8672 	EXP 	New trial (rep=8, index=0): <Trial 8 (0 in rep 8) data={'thisN': 8, 'thisTrialN': 0, 'thisRepN': 8}>
+659.8833 	EXP 	dot_10: autoDraw = False
+659.8833 	EXP 	dot_1: autoDraw = False
+659.8833 	EXP 	dot_2: autoDraw = False
+659.8833 	EXP 	dot_3: autoDraw = False
+659.8833 	EXP 	dot_4: autoDraw = False
+659.8833 	EXP 	dot_5: autoDraw = False
+659.8833 	EXP 	dot_6: autoDraw = False
+659.8833 	EXP 	dot_7: autoDraw = False
+659.8833 	EXP 	dot_8: autoDraw = False
+659.8833 	EXP 	dot_9: autoDraw = False
+659.8833 	EXP 	dot_10: autoDraw = False
+659.8833 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+659.8833 	EXP 	dot_1: autoDraw = True
+660.8859 	EXP 	dot_1: autoDraw = False
+660.8859 	EXP 	dot_2: autoDraw = True
+661.8834 	EXP 	dot_2: autoDraw = False
+661.8834 	EXP 	dot_3: autoDraw = True
+661.9526 	DATA 	Keypress: s
+662.8834 	EXP 	dot_3: autoDraw = False
+662.8834 	EXP 	dot_4: autoDraw = True
+663.8832 	EXP 	dot_4: autoDraw = False
+663.8832 	EXP 	dot_5: autoDraw = True
+664.4513 	DATA 	Keypress: s
+664.8832 	EXP 	dot_5: autoDraw = False
+664.8832 	EXP 	dot_6: autoDraw = True
+665.8830 	EXP 	dot_6: autoDraw = False
+665.8830 	EXP 	dot_7: autoDraw = True
+666.8832 	EXP 	dot_7: autoDraw = False
+666.8832 	EXP 	dot_8: autoDraw = True
+666.9521 	DATA 	Keypress: s
+667.8830 	EXP 	dot_8: autoDraw = False
+667.8830 	EXP 	dot_9: autoDraw = True
+668.8830 	EXP 	dot_9: autoDraw = False
+668.8830 	EXP 	dot_10: autoDraw = True
+669.4677 	DATA 	Keypress: s
+669.8666 	EXP 	New trial (rep=9, index=0): <Trial 9 (0 in rep 9) data={'thisN': 9, 'thisTrialN': 0, 'thisRepN': 9}>
+669.8831 	EXP 	dot_10: autoDraw = False
+669.8831 	EXP 	dot_1: autoDraw = False
+669.8831 	EXP 	dot_2: autoDraw = False
+669.8831 	EXP 	dot_3: autoDraw = False
+669.8831 	EXP 	dot_4: autoDraw = False
+669.8831 	EXP 	dot_5: autoDraw = False
+669.8831 	EXP 	dot_6: autoDraw = False
+669.8831 	EXP 	dot_7: autoDraw = False
+669.8831 	EXP 	dot_8: autoDraw = False
+669.8831 	EXP 	dot_9: autoDraw = False
+669.8831 	EXP 	dot_10: autoDraw = False
+669.8831 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+669.8831 	EXP 	dot_1: autoDraw = True
+670.8831 	EXP 	dot_1: autoDraw = False
+670.8831 	EXP 	dot_2: autoDraw = True
+671.8833 	EXP 	dot_2: autoDraw = False
+671.8833 	EXP 	dot_3: autoDraw = True
+671.9671 	DATA 	Keypress: s
+672.8836 	EXP 	dot_3: autoDraw = False
+672.8836 	EXP 	dot_4: autoDraw = True
+673.8829 	EXP 	dot_4: autoDraw = False
+673.8829 	EXP 	dot_5: autoDraw = True
+674.4679 	DATA 	Keypress: s
+674.8843 	EXP 	dot_5: autoDraw = False
+674.8843 	EXP 	dot_6: autoDraw = True
+675.8838 	EXP 	dot_6: autoDraw = False
+675.8838 	EXP 	dot_7: autoDraw = True
+676.8827 	EXP 	dot_7: autoDraw = False
+676.8827 	EXP 	dot_8: autoDraw = True
+676.9678 	DATA 	Keypress: s
+677.8834 	EXP 	dot_8: autoDraw = False
+677.8834 	EXP 	dot_9: autoDraw = True
+678.8829 	EXP 	dot_9: autoDraw = False
+678.8829 	EXP 	dot_10: autoDraw = True
+679.4676 	DATA 	Keypress: s
+679.8669 	EXP 	New trial (rep=10, index=0): <Trial 10 (0 in rep 10) data={'thisN': 10, 'thisTrialN': 0, 'thisRepN': 10}>
+679.8834 	EXP 	dot_10: autoDraw = False
+679.8834 	EXP 	dot_1: autoDraw = False
+679.8834 	EXP 	dot_2: autoDraw = False
+679.8834 	EXP 	dot_3: autoDraw = False
+679.8834 	EXP 	dot_4: autoDraw = False
+679.8834 	EXP 	dot_5: autoDraw = False
+679.8834 	EXP 	dot_6: autoDraw = False
+679.8834 	EXP 	dot_7: autoDraw = False
+679.8834 	EXP 	dot_8: autoDraw = False
+679.8834 	EXP 	dot_9: autoDraw = False
+679.8834 	EXP 	dot_10: autoDraw = False
+679.8834 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+679.8834 	EXP 	dot_1: autoDraw = True
+680.8829 	EXP 	dot_1: autoDraw = False
+680.8829 	EXP 	dot_2: autoDraw = True
+681.8829 	EXP 	dot_2: autoDraw = False
+681.8829 	EXP 	dot_3: autoDraw = True
+681.9680 	DATA 	Keypress: s
+682.8831 	EXP 	dot_3: autoDraw = False
+682.8831 	EXP 	dot_4: autoDraw = True
+683.8832 	EXP 	dot_4: autoDraw = False
+683.8832 	EXP 	dot_5: autoDraw = True
+684.4837 	DATA 	Keypress: s
+684.8825 	EXP 	dot_5: autoDraw = False
+684.8825 	EXP 	dot_6: autoDraw = True
+685.8825 	EXP 	dot_6: autoDraw = False
+685.8825 	EXP 	dot_7: autoDraw = True
+686.8830 	EXP 	dot_7: autoDraw = False
+686.8830 	EXP 	dot_8: autoDraw = True
+686.9839 	DATA 	Keypress: s
+687.8829 	EXP 	dot_8: autoDraw = False
+687.8829 	EXP 	dot_9: autoDraw = True
+688.8828 	EXP 	dot_9: autoDraw = False
+688.8828 	EXP 	dot_10: autoDraw = True
+689.4838 	DATA 	Keypress: s
+689.8666 	EXP 	New trial (rep=11, index=0): <Trial 11 (0 in rep 11) data={'thisN': 11, 'thisTrialN': 0, 'thisRepN': 11}>
+689.8826 	EXP 	dot_10: autoDraw = False
+689.8826 	EXP 	dot_1: autoDraw = False
+689.8826 	EXP 	dot_2: autoDraw = False
+689.8826 	EXP 	dot_3: autoDraw = False
+689.8826 	EXP 	dot_4: autoDraw = False
+689.8826 	EXP 	dot_5: autoDraw = False
+689.8826 	EXP 	dot_6: autoDraw = False
+689.8826 	EXP 	dot_7: autoDraw = False
+689.8826 	EXP 	dot_8: autoDraw = False
+689.8826 	EXP 	dot_9: autoDraw = False
+689.8826 	EXP 	dot_10: autoDraw = False
+689.8826 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+689.8826 	EXP 	dot_1: autoDraw = True
+690.8827 	EXP 	dot_1: autoDraw = False
+690.8827 	EXP 	dot_2: autoDraw = True
+691.8830 	EXP 	dot_2: autoDraw = False
+691.8830 	EXP 	dot_3: autoDraw = True
+691.9842 	DATA 	Keypress: s
+692.8827 	EXP 	dot_3: autoDraw = False
+692.8827 	EXP 	dot_4: autoDraw = True
+693.8829 	EXP 	dot_4: autoDraw = False
+693.8829 	EXP 	dot_5: autoDraw = True
+694.4840 	DATA 	Keypress: s
+694.8826 	EXP 	dot_5: autoDraw = False
+694.8826 	EXP 	dot_6: autoDraw = True
+695.8828 	EXP 	dot_6: autoDraw = False
+695.8828 	EXP 	dot_7: autoDraw = True
+696.8824 	EXP 	dot_7: autoDraw = False
+696.8824 	EXP 	dot_8: autoDraw = True
+696.9835 	DATA 	Keypress: s
+697.8825 	EXP 	dot_8: autoDraw = False
+697.8825 	EXP 	dot_9: autoDraw = True
+698.8825 	EXP 	dot_9: autoDraw = False
+698.8825 	EXP 	dot_10: autoDraw = True
+699.4999 	DATA 	Keypress: s
+699.8664 	EXP 	New trial (rep=12, index=0): <Trial 12 (0 in rep 12) data={'thisN': 12, 'thisTrialN': 0, 'thisRepN': 12}>
+699.8824 	EXP 	dot_10: autoDraw = False
+699.8824 	EXP 	dot_1: autoDraw = False
+699.8824 	EXP 	dot_2: autoDraw = False
+699.8824 	EXP 	dot_3: autoDraw = False
+699.8824 	EXP 	dot_4: autoDraw = False
+699.8824 	EXP 	dot_5: autoDraw = False
+699.8824 	EXP 	dot_6: autoDraw = False
+699.8824 	EXP 	dot_7: autoDraw = False
+699.8824 	EXP 	dot_8: autoDraw = False
+699.8824 	EXP 	dot_9: autoDraw = False
+699.8824 	EXP 	dot_10: autoDraw = False
+699.8824 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+699.8824 	EXP 	dot_1: autoDraw = True
+700.8828 	EXP 	dot_1: autoDraw = False
+700.8828 	EXP 	dot_2: autoDraw = True
+701.8828 	EXP 	dot_2: autoDraw = False
+701.8828 	EXP 	dot_3: autoDraw = True
+701.9844 	DATA 	Keypress: s
+702.8825 	EXP 	dot_3: autoDraw = False
+702.8825 	EXP 	dot_4: autoDraw = True
+703.8827 	EXP 	dot_4: autoDraw = False
+703.8827 	EXP 	dot_5: autoDraw = True
+704.5002 	DATA 	Keypress: s
+704.8823 	EXP 	dot_5: autoDraw = False
+704.8823 	EXP 	dot_6: autoDraw = True
+705.8825 	EXP 	dot_6: autoDraw = False
+705.8825 	EXP 	dot_7: autoDraw = True
+706.8823 	EXP 	dot_7: autoDraw = False
+706.8823 	EXP 	dot_8: autoDraw = True
+706.9994 	DATA 	Keypress: s
+707.8830 	EXP 	dot_8: autoDraw = False
+707.8830 	EXP 	dot_9: autoDraw = True
+708.8825 	EXP 	dot_9: autoDraw = False
+708.8825 	EXP 	dot_10: autoDraw = True
+709.4998 	DATA 	Keypress: s
+709.8655 	EXP 	New trial (rep=13, index=0): <Trial 13 (0 in rep 13) data={'thisN': 13, 'thisTrialN': 0, 'thisRepN': 13}>
+709.8821 	EXP 	dot_10: autoDraw = False
+709.8821 	EXP 	dot_1: autoDraw = False
+709.8821 	EXP 	dot_2: autoDraw = False
+709.8821 	EXP 	dot_3: autoDraw = False
+709.8821 	EXP 	dot_4: autoDraw = False
+709.8821 	EXP 	dot_5: autoDraw = False
+709.8821 	EXP 	dot_6: autoDraw = False
+709.8821 	EXP 	dot_7: autoDraw = False
+709.8821 	EXP 	dot_8: autoDraw = False
+709.8821 	EXP 	dot_9: autoDraw = False
+709.8821 	EXP 	dot_10: autoDraw = False
+709.8821 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+709.8821 	EXP 	dot_1: autoDraw = True
+710.8821 	EXP 	dot_1: autoDraw = False
+710.8821 	EXP 	dot_2: autoDraw = True
+711.8822 	EXP 	dot_2: autoDraw = False
+711.8822 	EXP 	dot_3: autoDraw = True
+711.9997 	DATA 	Keypress: s
+712.8824 	EXP 	dot_3: autoDraw = False
+712.8824 	EXP 	dot_4: autoDraw = True
+713.8825 	EXP 	dot_4: autoDraw = False
+713.8825 	EXP 	dot_5: autoDraw = True
+714.5171 	DATA 	Keypress: s
+714.8824 	EXP 	dot_5: autoDraw = False
+714.8824 	EXP 	dot_6: autoDraw = True
+715.8820 	EXP 	dot_6: autoDraw = False
+715.8820 	EXP 	dot_7: autoDraw = True
+716.8820 	EXP 	dot_7: autoDraw = False
+716.8820 	EXP 	dot_8: autoDraw = True
+717.0166 	DATA 	Keypress: s
+717.8821 	EXP 	dot_8: autoDraw = False
+717.8821 	EXP 	dot_9: autoDraw = True
+718.8820 	EXP 	dot_9: autoDraw = False
+718.8820 	EXP 	dot_10: autoDraw = True
+719.5170 	DATA 	Keypress: s
+719.8658 	EXP 	New trial (rep=14, index=0): <Trial 14 (0 in rep 14) data={'thisN': 14, 'thisTrialN': 0, 'thisRepN': 14}>
+719.8819 	EXP 	dot_10: autoDraw = False
+719.8819 	EXP 	dot_1: autoDraw = False
+719.8819 	EXP 	dot_2: autoDraw = False
+719.8819 	EXP 	dot_3: autoDraw = False
+719.8819 	EXP 	dot_4: autoDraw = False
+719.8819 	EXP 	dot_5: autoDraw = False
+719.8819 	EXP 	dot_6: autoDraw = False
+719.8819 	EXP 	dot_7: autoDraw = False
+719.8819 	EXP 	dot_8: autoDraw = False
+719.8819 	EXP 	dot_9: autoDraw = False
+719.8819 	EXP 	dot_10: autoDraw = False
+719.8819 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+719.8819 	EXP 	dot_1: autoDraw = True
+720.8824 	EXP 	dot_1: autoDraw = False
+720.8824 	EXP 	dot_2: autoDraw = True
+721.8822 	EXP 	dot_2: autoDraw = False
+721.8822 	EXP 	dot_3: autoDraw = True
+722.0167 	DATA 	Keypress: s
+722.8818 	EXP 	dot_3: autoDraw = False
+722.8818 	EXP 	dot_4: autoDraw = True
+723.8823 	EXP 	dot_4: autoDraw = False
+723.8823 	EXP 	dot_5: autoDraw = True
+724.5167 	DATA 	Keypress: s
+724.8819 	EXP 	dot_5: autoDraw = False
+724.8819 	EXP 	dot_6: autoDraw = True
+725.8816 	EXP 	dot_6: autoDraw = False
+725.8816 	EXP 	dot_7: autoDraw = True
+726.8822 	EXP 	dot_7: autoDraw = False
+726.8822 	EXP 	dot_8: autoDraw = True
+727.0166 	DATA 	Keypress: s
+727.8826 	EXP 	dot_8: autoDraw = False
+727.8826 	EXP 	dot_9: autoDraw = True
+728.8818 	EXP 	dot_9: autoDraw = False
+728.8818 	EXP 	dot_10: autoDraw = True
+729.5335 	DATA 	Keypress: s
+729.8656 	EXP 	New trial (rep=15, index=0): <Trial 15 (0 in rep 15) data={'thisN': 15, 'thisTrialN': 0, 'thisRepN': 15}>
+729.8817 	EXP 	dot_10: autoDraw = False
+729.8817 	EXP 	dot_1: autoDraw = False
+729.8817 	EXP 	dot_2: autoDraw = False
+729.8817 	EXP 	dot_3: autoDraw = False
+729.8817 	EXP 	dot_4: autoDraw = False
+729.8817 	EXP 	dot_5: autoDraw = False
+729.8817 	EXP 	dot_6: autoDraw = False
+729.8817 	EXP 	dot_7: autoDraw = False
+729.8817 	EXP 	dot_8: autoDraw = False
+729.8817 	EXP 	dot_9: autoDraw = False
+729.8817 	EXP 	dot_10: autoDraw = False
+729.8817 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+729.8817 	EXP 	dot_1: autoDraw = True
+730.8822 	EXP 	dot_1: autoDraw = False
+730.8822 	EXP 	dot_2: autoDraw = True
+731.8817 	EXP 	dot_2: autoDraw = False
+731.8817 	EXP 	dot_3: autoDraw = True
+732.0324 	DATA 	Keypress: s
+732.8819 	EXP 	dot_3: autoDraw = False
+732.8819 	EXP 	dot_4: autoDraw = True
+733.8819 	EXP 	dot_4: autoDraw = False
+733.8819 	EXP 	dot_5: autoDraw = True
+734.5329 	DATA 	Keypress: s
+734.8817 	EXP 	dot_5: autoDraw = False
+734.8817 	EXP 	dot_6: autoDraw = True
+735.8815 	EXP 	dot_6: autoDraw = False
+735.8815 	EXP 	dot_7: autoDraw = True
+736.8816 	EXP 	dot_7: autoDraw = False
+736.8816 	EXP 	dot_8: autoDraw = True
+737.0331 	DATA 	Keypress: s
+737.8815 	EXP 	dot_8: autoDraw = False
+737.8815 	EXP 	dot_9: autoDraw = True
+738.8815 	EXP 	dot_9: autoDraw = False
+738.8815 	EXP 	dot_10: autoDraw = True
+739.5319 	DATA 	Keypress: s
+739.8663 	EXP 	New trial (rep=16, index=0): <Trial 16 (0 in rep 16) data={'thisN': 16, 'thisTrialN': 0, 'thisRepN': 16}>
+739.8818 	EXP 	dot_10: autoDraw = False
+739.8818 	EXP 	dot_1: autoDraw = False
+739.8818 	EXP 	dot_2: autoDraw = False
+739.8818 	EXP 	dot_3: autoDraw = False
+739.8818 	EXP 	dot_4: autoDraw = False
+739.8818 	EXP 	dot_5: autoDraw = False
+739.8818 	EXP 	dot_6: autoDraw = False
+739.8818 	EXP 	dot_7: autoDraw = False
+739.8818 	EXP 	dot_8: autoDraw = False
+739.8818 	EXP 	dot_9: autoDraw = False
+739.8818 	EXP 	dot_10: autoDraw = False
+739.8818 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+739.8818 	EXP 	dot_1: autoDraw = True
+740.8819 	EXP 	dot_1: autoDraw = False
+740.8819 	EXP 	dot_2: autoDraw = True
+741.8827 	EXP 	dot_2: autoDraw = False
+741.8827 	EXP 	dot_3: autoDraw = True
+742.0329 	DATA 	Keypress: s
+742.8820 	EXP 	dot_3: autoDraw = False
+742.8820 	EXP 	dot_4: autoDraw = True
+743.8818 	EXP 	dot_4: autoDraw = False
+743.8818 	EXP 	dot_5: autoDraw = True
+744.5491 	DATA 	Keypress: s
+744.8812 	EXP 	dot_5: autoDraw = False
+744.8812 	EXP 	dot_6: autoDraw = True
+745.8826 	EXP 	dot_6: autoDraw = False
+745.8826 	EXP 	dot_7: autoDraw = True
+746.8819 	EXP 	dot_7: autoDraw = False
+746.8819 	EXP 	dot_8: autoDraw = True
+747.0326 	DATA 	Keypress: s
+747.8816 	EXP 	dot_8: autoDraw = False
+747.8816 	EXP 	dot_9: autoDraw = True
+748.8814 	EXP 	dot_9: autoDraw = False
+748.8814 	EXP 	dot_10: autoDraw = True
+749.5491 	DATA 	Keypress: s
+749.8652 	EXP 	New trial (rep=17, index=0): <Trial 17 (0 in rep 17) data={'thisN': 17, 'thisTrialN': 0, 'thisRepN': 17}>
+749.8813 	EXP 	dot_10: autoDraw = False
+749.8813 	EXP 	dot_1: autoDraw = False
+749.8813 	EXP 	dot_2: autoDraw = False
+749.8813 	EXP 	dot_3: autoDraw = False
+749.8813 	EXP 	dot_4: autoDraw = False
+749.8813 	EXP 	dot_5: autoDraw = False
+749.8813 	EXP 	dot_6: autoDraw = False
+749.8813 	EXP 	dot_7: autoDraw = False
+749.8813 	EXP 	dot_8: autoDraw = False
+749.8813 	EXP 	dot_9: autoDraw = False
+749.8813 	EXP 	dot_10: autoDraw = False
+749.8813 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+749.8813 	EXP 	dot_1: autoDraw = True
+750.8814 	EXP 	dot_1: autoDraw = False
+750.8814 	EXP 	dot_2: autoDraw = True
+751.8814 	EXP 	dot_2: autoDraw = False
+751.8814 	EXP 	dot_3: autoDraw = True
+752.0492 	DATA 	Keypress: s
+752.8812 	EXP 	dot_3: autoDraw = False
+752.8812 	EXP 	dot_4: autoDraw = True
+753.8810 	EXP 	dot_4: autoDraw = False
+753.8810 	EXP 	dot_5: autoDraw = True
+754.5490 	DATA 	Keypress: s
+754.8812 	EXP 	dot_5: autoDraw = False
+754.8812 	EXP 	dot_6: autoDraw = True
+755.8811 	EXP 	dot_6: autoDraw = False
+755.8811 	EXP 	dot_7: autoDraw = True
+756.8816 	EXP 	dot_7: autoDraw = False
+756.8816 	EXP 	dot_8: autoDraw = True
+757.0496 	DATA 	Keypress: s
+757.8811 	EXP 	dot_8: autoDraw = False
+757.8811 	EXP 	dot_9: autoDraw = True
+758.8812 	EXP 	dot_9: autoDraw = False
+758.8812 	EXP 	dot_10: autoDraw = True
+759.5492 	DATA 	Keypress: s
+759.8650 	EXP 	New trial (rep=18, index=0): <Trial 18 (0 in rep 18) data={'thisN': 18, 'thisTrialN': 0, 'thisRepN': 18}>
+759.8810 	EXP 	dot_10: autoDraw = False
+759.8810 	EXP 	dot_1: autoDraw = False
+759.8810 	EXP 	dot_2: autoDraw = False
+759.8810 	EXP 	dot_3: autoDraw = False
+759.8810 	EXP 	dot_4: autoDraw = False
+759.8810 	EXP 	dot_5: autoDraw = False
+759.8810 	EXP 	dot_6: autoDraw = False
+759.8810 	EXP 	dot_7: autoDraw = False
+759.8810 	EXP 	dot_8: autoDraw = False
+759.8810 	EXP 	dot_9: autoDraw = False
+759.8810 	EXP 	dot_10: autoDraw = False
+759.8810 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+759.8810 	EXP 	dot_1: autoDraw = True
+760.8810 	EXP 	dot_1: autoDraw = False
+760.8810 	EXP 	dot_2: autoDraw = True
+761.8811 	EXP 	dot_2: autoDraw = False
+761.8811 	EXP 	dot_3: autoDraw = True
+762.0652 	DATA 	Keypress: s
+762.8815 	EXP 	dot_3: autoDraw = False
+762.8815 	EXP 	dot_4: autoDraw = True
+763.8809 	EXP 	dot_4: autoDraw = False
+763.8809 	EXP 	dot_5: autoDraw = True
+764.5652 	DATA 	Keypress: s
+764.8809 	EXP 	dot_5: autoDraw = False
+764.8809 	EXP 	dot_6: autoDraw = True
+765.8810 	EXP 	dot_6: autoDraw = False
+765.8810 	EXP 	dot_7: autoDraw = True
+766.8809 	EXP 	dot_7: autoDraw = False
+766.8809 	EXP 	dot_8: autoDraw = True
+767.0664 	DATA 	Keypress: s
+767.8809 	EXP 	dot_8: autoDraw = False
+767.8809 	EXP 	dot_9: autoDraw = True
+768.8813 	EXP 	dot_9: autoDraw = False
+768.8813 	EXP 	dot_10: autoDraw = True
+769.5649 	DATA 	Keypress: s
+769.8646 	EXP 	New trial (rep=19, index=0): <Trial 19 (0 in rep 19) data={'thisN': 19, 'thisTrialN': 0, 'thisRepN': 19}>
+769.8807 	EXP 	dot_10: autoDraw = False
+769.8807 	EXP 	dot_1: autoDraw = False
+769.8807 	EXP 	dot_2: autoDraw = False
+769.8807 	EXP 	dot_3: autoDraw = False
+769.8807 	EXP 	dot_4: autoDraw = False
+769.8807 	EXP 	dot_5: autoDraw = False
+769.8807 	EXP 	dot_6: autoDraw = False
+769.8807 	EXP 	dot_7: autoDraw = False
+769.8807 	EXP 	dot_8: autoDraw = False
+769.8807 	EXP 	dot_9: autoDraw = False
+769.8807 	EXP 	dot_10: autoDraw = False
+769.8807 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+769.8807 	EXP 	dot_1: autoDraw = True
+770.8808 	EXP 	dot_1: autoDraw = False
+770.8808 	EXP 	dot_2: autoDraw = True
+771.8808 	EXP 	dot_2: autoDraw = False
+771.8808 	EXP 	dot_3: autoDraw = True
+772.0649 	DATA 	Keypress: s
+772.8806 	EXP 	dot_3: autoDraw = False
+772.8806 	EXP 	dot_4: autoDraw = True
+773.8808 	EXP 	dot_4: autoDraw = False
+773.8808 	EXP 	dot_5: autoDraw = True
+774.5817 	DATA 	Keypress: s
+774.8807 	EXP 	dot_5: autoDraw = False
+774.8807 	EXP 	dot_6: autoDraw = True
+775.8809 	EXP 	dot_6: autoDraw = False
+775.8809 	EXP 	dot_7: autoDraw = True
+776.8803 	EXP 	dot_7: autoDraw = False
+776.8803 	EXP 	dot_8: autoDraw = True
+777.0649 	DATA 	Keypress: s
+777.8806 	EXP 	dot_8: autoDraw = False
+777.8806 	EXP 	dot_9: autoDraw = True
+778.8809 	EXP 	dot_9: autoDraw = False
+778.8809 	EXP 	dot_10: autoDraw = True
+779.5828 	DATA 	Keypress: s
+779.8646 	EXP 	New trial (rep=20, index=0): <Trial 20 (0 in rep 20) data={'thisN': 20, 'thisTrialN': 0, 'thisRepN': 20}>
+779.8809 	EXP 	dot_10: autoDraw = False
+779.8809 	EXP 	dot_1: autoDraw = False
+779.8809 	EXP 	dot_2: autoDraw = False
+779.8809 	EXP 	dot_3: autoDraw = False
+779.8809 	EXP 	dot_4: autoDraw = False
+779.8809 	EXP 	dot_5: autoDraw = False
+779.8809 	EXP 	dot_6: autoDraw = False
+779.8809 	EXP 	dot_7: autoDraw = False
+779.8809 	EXP 	dot_8: autoDraw = False
+779.8809 	EXP 	dot_9: autoDraw = False
+779.8809 	EXP 	dot_10: autoDraw = False
+779.8809 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+779.8809 	EXP 	dot_1: autoDraw = True
+780.8805 	EXP 	dot_1: autoDraw = False
+780.8805 	EXP 	dot_2: autoDraw = True
+781.8809 	EXP 	dot_2: autoDraw = False
+781.8809 	EXP 	dot_3: autoDraw = True
+782.0823 	DATA 	Keypress: s
+782.8810 	EXP 	dot_3: autoDraw = False
+782.8810 	EXP 	dot_4: autoDraw = True
+783.8805 	EXP 	dot_4: autoDraw = False
+783.8805 	EXP 	dot_5: autoDraw = True
+784.5823 	DATA 	Keypress: s
+784.8804 	EXP 	dot_5: autoDraw = False
+784.8804 	EXP 	dot_6: autoDraw = True
+785.8804 	EXP 	dot_6: autoDraw = False
+785.8804 	EXP 	dot_7: autoDraw = True
+786.8805 	EXP 	dot_7: autoDraw = False
+786.8805 	EXP 	dot_8: autoDraw = True
+787.0820 	DATA 	Keypress: s
+787.8804 	EXP 	dot_8: autoDraw = False
+787.8804 	EXP 	dot_9: autoDraw = True
+788.8805 	EXP 	dot_9: autoDraw = False
+788.8805 	EXP 	dot_10: autoDraw = True
+789.5824 	DATA 	Keypress: s
+789.8649 	EXP 	New trial (rep=21, index=0): <Trial 21 (0 in rep 21) data={'thisN': 21, 'thisTrialN': 0, 'thisRepN': 21}>
+789.8808 	EXP 	dot_10: autoDraw = False
+789.8808 	EXP 	dot_1: autoDraw = False
+789.8808 	EXP 	dot_2: autoDraw = False
+789.8808 	EXP 	dot_3: autoDraw = False
+789.8808 	EXP 	dot_4: autoDraw = False
+789.8808 	EXP 	dot_5: autoDraw = False
+789.8808 	EXP 	dot_6: autoDraw = False
+789.8808 	EXP 	dot_7: autoDraw = False
+789.8808 	EXP 	dot_8: autoDraw = False
+789.8808 	EXP 	dot_9: autoDraw = False
+789.8808 	EXP 	dot_10: autoDraw = False
+789.8808 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+789.8808 	EXP 	dot_1: autoDraw = True
+790.8804 	EXP 	dot_2: autoDraw = True
+790.8967 	EXP 	dot_1: autoDraw = False
+791.8802 	EXP 	dot_2: autoDraw = False
+791.8802 	EXP 	dot_3: autoDraw = True
+792.0819 	DATA 	Keypress: s
+792.8803 	EXP 	dot_3: autoDraw = False
+792.8803 	EXP 	dot_4: autoDraw = True
+793.8803 	EXP 	dot_4: autoDraw = False
+793.8803 	EXP 	dot_5: autoDraw = True
+794.5976 	DATA 	Keypress: s
+794.8809 	EXP 	dot_5: autoDraw = False
+794.8809 	EXP 	dot_6: autoDraw = True
+795.8800 	EXP 	dot_6: autoDraw = False
+795.8800 	EXP 	dot_7: autoDraw = True
+796.8799 	EXP 	dot_7: autoDraw = False
+796.8799 	EXP 	dot_8: autoDraw = True
+797.0977 	DATA 	Keypress: s
+797.8802 	EXP 	dot_8: autoDraw = False
+797.8802 	EXP 	dot_9: autoDraw = True
+798.8799 	EXP 	dot_9: autoDraw = False
+798.8799 	EXP 	dot_10: autoDraw = True
+799.5981 	DATA 	Keypress: s
+799.8640 	EXP 	New trial (rep=22, index=0): <Trial 22 (0 in rep 22) data={'thisN': 22, 'thisTrialN': 0, 'thisRepN': 22}>
+799.8811 	EXP 	dot_10: autoDraw = False
+799.8811 	EXP 	dot_1: autoDraw = False
+799.8811 	EXP 	dot_2: autoDraw = False
+799.8811 	EXP 	dot_3: autoDraw = False
+799.8811 	EXP 	dot_4: autoDraw = False
+799.8811 	EXP 	dot_5: autoDraw = False
+799.8811 	EXP 	dot_6: autoDraw = False
+799.8811 	EXP 	dot_7: autoDraw = False
+799.8811 	EXP 	dot_8: autoDraw = False
+799.8811 	EXP 	dot_9: autoDraw = False
+799.8811 	EXP 	dot_10: autoDraw = False
+799.8811 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+799.8811 	EXP 	dot_1: autoDraw = True
+800.8804 	EXP 	dot_2: autoDraw = True
+800.8965 	EXP 	dot_1: autoDraw = False
+801.8800 	EXP 	dot_2: autoDraw = False
+801.8800 	EXP 	dot_3: autoDraw = True
+802.0983 	DATA 	Keypress: s
+802.8806 	EXP 	dot_3: autoDraw = False
+802.8806 	EXP 	dot_4: autoDraw = True
+803.8802 	EXP 	dot_4: autoDraw = False
+803.8802 	EXP 	dot_5: autoDraw = True
+804.5979 	DATA 	Keypress: s
+804.8805 	EXP 	dot_5: autoDraw = False
+804.8805 	EXP 	dot_6: autoDraw = True
+805.8802 	EXP 	dot_6: autoDraw = False
+805.8802 	EXP 	dot_7: autoDraw = True
+806.8801 	EXP 	dot_7: autoDraw = False
+806.8801 	EXP 	dot_8: autoDraw = True
+807.0987 	DATA 	Keypress: s
+807.8804 	EXP 	dot_8: autoDraw = False
+807.8804 	EXP 	dot_9: autoDraw = True
+808.8801 	EXP 	dot_9: autoDraw = False
+808.8801 	EXP 	dot_10: autoDraw = True
+809.6148 	DATA 	Keypress: s
+809.8638 	EXP 	New trial (rep=23, index=0): <Trial 23 (0 in rep 23) data={'thisN': 23, 'thisTrialN': 0, 'thisRepN': 23}>
+809.8800 	EXP 	dot_10: autoDraw = False
+809.8800 	EXP 	dot_1: autoDraw = False
+809.8800 	EXP 	dot_2: autoDraw = False
+809.8800 	EXP 	dot_3: autoDraw = False
+809.8800 	EXP 	dot_4: autoDraw = False
+809.8800 	EXP 	dot_5: autoDraw = False
+809.8800 	EXP 	dot_6: autoDraw = False
+809.8800 	EXP 	dot_7: autoDraw = False
+809.8800 	EXP 	dot_8: autoDraw = False
+809.8800 	EXP 	dot_9: autoDraw = False
+809.8800 	EXP 	dot_10: autoDraw = False
+809.8800 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+809.8800 	EXP 	dot_1: autoDraw = True
+810.8795 	EXP 	dot_1: autoDraw = False
+810.8795 	EXP 	dot_2: autoDraw = True
+811.8798 	EXP 	dot_2: autoDraw = False
+811.8798 	EXP 	dot_3: autoDraw = True
+812.1144 	DATA 	Keypress: s
+812.8818 	EXP 	dot_3: autoDraw = False
+812.8818 	EXP 	dot_4: autoDraw = True
+813.8799 	EXP 	dot_4: autoDraw = False
+813.8799 	EXP 	dot_5: autoDraw = True
+814.6144 	DATA 	Keypress: s
+814.8798 	EXP 	dot_5: autoDraw = False
+814.8798 	EXP 	dot_6: autoDraw = True
+815.8799 	EXP 	dot_6: autoDraw = False
+815.8799 	EXP 	dot_7: autoDraw = True
+816.8798 	EXP 	dot_7: autoDraw = False
+816.8798 	EXP 	dot_8: autoDraw = True
+817.1145 	DATA 	Keypress: s
+817.8798 	EXP 	dot_8: autoDraw = False
+817.8798 	EXP 	dot_9: autoDraw = True
+818.8793 	EXP 	dot_9: autoDraw = False
+818.8793 	EXP 	dot_10: autoDraw = True
+819.6308 	DATA 	Keypress: s
+819.8634 	EXP 	New trial (rep=24, index=0): <Trial 24 (0 in rep 24) data={'thisN': 24, 'thisTrialN': 0, 'thisRepN': 24}>
+819.8794 	EXP 	dot_10: autoDraw = False
+819.8794 	EXP 	dot_1: autoDraw = False
+819.8794 	EXP 	dot_2: autoDraw = False
+819.8794 	EXP 	dot_3: autoDraw = False
+819.8794 	EXP 	dot_4: autoDraw = False
+819.8794 	EXP 	dot_5: autoDraw = False
+819.8794 	EXP 	dot_6: autoDraw = False
+819.8794 	EXP 	dot_7: autoDraw = False
+819.8794 	EXP 	dot_8: autoDraw = False
+819.8794 	EXP 	dot_9: autoDraw = False
+819.8794 	EXP 	dot_10: autoDraw = False
+819.8794 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+819.8794 	EXP 	dot_1: autoDraw = True
+820.8798 	EXP 	dot_1: autoDraw = False
+820.8798 	EXP 	dot_2: autoDraw = True
+821.8796 	EXP 	dot_2: autoDraw = False
+821.8796 	EXP 	dot_3: autoDraw = True
+822.1138 	DATA 	Keypress: s
+822.8795 	EXP 	dot_3: autoDraw = False
+822.8795 	EXP 	dot_4: autoDraw = True
+823.8794 	EXP 	dot_4: autoDraw = False
+823.8794 	EXP 	dot_5: autoDraw = True
+824.6300 	DATA 	Keypress: s
+824.8792 	EXP 	dot_5: autoDraw = False
+824.8792 	EXP 	dot_6: autoDraw = True
+825.8794 	EXP 	dot_6: autoDraw = False
+825.8794 	EXP 	dot_7: autoDraw = True
+826.8795 	EXP 	dot_7: autoDraw = False
+826.8795 	EXP 	dot_8: autoDraw = True
+827.1318 	DATA 	Keypress: s
+827.8797 	EXP 	dot_8: autoDraw = False
+827.8797 	EXP 	dot_9: autoDraw = True
+828.8795 	EXP 	dot_9: autoDraw = False
+828.8795 	EXP 	dot_10: autoDraw = True
+829.6304 	DATA 	Keypress: s
+829.8628 	EXP 	New trial (rep=25, index=0): <Trial 25 (0 in rep 25) data={'thisN': 25, 'thisTrialN': 0, 'thisRepN': 25}>
+829.8790 	EXP 	dot_10: autoDraw = False
+829.8790 	EXP 	dot_1: autoDraw = False
+829.8790 	EXP 	dot_2: autoDraw = False
+829.8790 	EXP 	dot_3: autoDraw = False
+829.8790 	EXP 	dot_4: autoDraw = False
+829.8790 	EXP 	dot_5: autoDraw = False
+829.8790 	EXP 	dot_6: autoDraw = False
+829.8790 	EXP 	dot_7: autoDraw = False
+829.8790 	EXP 	dot_8: autoDraw = False
+829.8790 	EXP 	dot_9: autoDraw = False
+829.8790 	EXP 	dot_10: autoDraw = False
+829.8790 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+829.8790 	EXP 	dot_1: autoDraw = True
+830.8792 	EXP 	dot_1: autoDraw = False
+830.8792 	EXP 	dot_2: autoDraw = True
+831.8793 	EXP 	dot_2: autoDraw = False
+831.8793 	EXP 	dot_3: autoDraw = True
+832.1305 	DATA 	Keypress: s
+832.8791 	EXP 	dot_3: autoDraw = False
+832.8791 	EXP 	dot_4: autoDraw = True
+833.8800 	EXP 	dot_4: autoDraw = False
+833.8800 	EXP 	dot_5: autoDraw = True
+834.6308 	DATA 	Keypress: s
+834.8797 	EXP 	dot_5: autoDraw = False
+834.8797 	EXP 	dot_6: autoDraw = True
+835.8798 	EXP 	dot_6: autoDraw = False
+835.8798 	EXP 	dot_7: autoDraw = True
+836.8792 	EXP 	dot_7: autoDraw = False
+836.8792 	EXP 	dot_8: autoDraw = True
+837.1301 	DATA 	Keypress: s
+837.8798 	EXP 	dot_8: autoDraw = False
+837.8798 	EXP 	dot_9: autoDraw = True
+838.8797 	EXP 	dot_9: autoDraw = False
+838.8797 	EXP 	dot_10: autoDraw = True
+839.6469 	DATA 	Keypress: s
+839.8631 	EXP 	New trial (rep=26, index=0): <Trial 26 (0 in rep 26) data={'thisN': 26, 'thisTrialN': 0, 'thisRepN': 26}>
+839.8791 	EXP 	dot_10: autoDraw = False
+839.8791 	EXP 	dot_1: autoDraw = False
+839.8791 	EXP 	dot_2: autoDraw = False
+839.8791 	EXP 	dot_3: autoDraw = False
+839.8791 	EXP 	dot_4: autoDraw = False
+839.8791 	EXP 	dot_5: autoDraw = False
+839.8791 	EXP 	dot_6: autoDraw = False
+839.8791 	EXP 	dot_7: autoDraw = False
+839.8791 	EXP 	dot_8: autoDraw = False
+839.8791 	EXP 	dot_9: autoDraw = False
+839.8791 	EXP 	dot_10: autoDraw = False
+839.8791 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+839.8791 	EXP 	dot_1: autoDraw = True
+840.8793 	EXP 	dot_1: autoDraw = False
+840.8793 	EXP 	dot_2: autoDraw = True
+841.8794 	EXP 	dot_2: autoDraw = False
+841.8794 	EXP 	dot_3: autoDraw = True
+842.1469 	DATA 	Keypress: s
+842.8790 	EXP 	dot_3: autoDraw = False
+842.8790 	EXP 	dot_4: autoDraw = True
+843.8793 	EXP 	dot_4: autoDraw = False
+843.8793 	EXP 	dot_5: autoDraw = True
+844.6480 	DATA 	Keypress: s
+844.8799 	EXP 	dot_5: autoDraw = False
+844.8799 	EXP 	dot_6: autoDraw = True
+845.8791 	EXP 	dot_6: autoDraw = False
+845.8791 	EXP 	dot_7: autoDraw = True
+846.8790 	EXP 	dot_7: autoDraw = False
+846.8790 	EXP 	dot_8: autoDraw = True
+847.1473 	DATA 	Keypress: s
+847.8790 	EXP 	dot_8: autoDraw = False
+847.8790 	EXP 	dot_9: autoDraw = True
+848.8794 	EXP 	dot_9: autoDraw = False
+848.8794 	EXP 	dot_10: autoDraw = True
+849.6472 	DATA 	Keypress: s
+849.8621 	EXP 	New trial (rep=27, index=0): <Trial 27 (0 in rep 27) data={'thisN': 27, 'thisTrialN': 0, 'thisRepN': 27}>
+849.8788 	EXP 	dot_10: autoDraw = False
+849.8788 	EXP 	dot_1: autoDraw = False
+849.8788 	EXP 	dot_2: autoDraw = False
+849.8788 	EXP 	dot_3: autoDraw = False
+849.8788 	EXP 	dot_4: autoDraw = False
+849.8788 	EXP 	dot_5: autoDraw = False
+849.8788 	EXP 	dot_6: autoDraw = False
+849.8788 	EXP 	dot_7: autoDraw = False
+849.8788 	EXP 	dot_8: autoDraw = False
+849.8788 	EXP 	dot_9: autoDraw = False
+849.8788 	EXP 	dot_10: autoDraw = False
+849.8788 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+849.8788 	EXP 	dot_1: autoDraw = True
+850.8790 	EXP 	dot_1: autoDraw = False
+850.8790 	EXP 	dot_2: autoDraw = True
+851.8789 	EXP 	dot_2: autoDraw = False
+851.8789 	EXP 	dot_3: autoDraw = True
+852.1465 	DATA 	Keypress: s
+852.8790 	EXP 	dot_3: autoDraw = False
+852.8790 	EXP 	dot_4: autoDraw = True
+853.8787 	EXP 	dot_4: autoDraw = False
+853.8787 	EXP 	dot_5: autoDraw = True
+854.6479 	DATA 	Keypress: s
+854.8789 	EXP 	dot_5: autoDraw = False
+854.8789 	EXP 	dot_6: autoDraw = True
+855.8788 	EXP 	dot_6: autoDraw = False
+855.8788 	EXP 	dot_7: autoDraw = True
+856.8787 	EXP 	dot_7: autoDraw = False
+856.8787 	EXP 	dot_8: autoDraw = True
+857.1630 	DATA 	Keypress: s
+857.8790 	EXP 	dot_8: autoDraw = False
+857.8790 	EXP 	dot_9: autoDraw = True
+858.8797 	EXP 	dot_9: autoDraw = False
+858.8797 	EXP 	dot_10: autoDraw = True
+859.6630 	DATA 	Keypress: s
+859.8625 	EXP 	New trial (rep=28, index=0): <Trial 28 (0 in rep 28) data={'thisN': 28, 'thisTrialN': 0, 'thisRepN': 28}>
+859.8787 	EXP 	dot_10: autoDraw = False
+859.8787 	EXP 	dot_1: autoDraw = False
+859.8787 	EXP 	dot_2: autoDraw = False
+859.8787 	EXP 	dot_3: autoDraw = False
+859.8787 	EXP 	dot_4: autoDraw = False
+859.8787 	EXP 	dot_5: autoDraw = False
+859.8787 	EXP 	dot_6: autoDraw = False
+859.8787 	EXP 	dot_7: autoDraw = False
+859.8787 	EXP 	dot_8: autoDraw = False
+859.8787 	EXP 	dot_9: autoDraw = False
+859.8787 	EXP 	dot_10: autoDraw = False
+859.8787 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+859.8787 	EXP 	dot_1: autoDraw = True
+860.8788 	EXP 	dot_1: autoDraw = False
+860.8788 	EXP 	dot_2: autoDraw = True
+861.8789 	EXP 	dot_2: autoDraw = False
+861.8789 	EXP 	dot_3: autoDraw = True
+862.1648 	DATA 	Keypress: s
+862.8788 	EXP 	dot_3: autoDraw = False
+862.8788 	EXP 	dot_4: autoDraw = True
+863.8791 	EXP 	dot_4: autoDraw = False
+863.8791 	EXP 	dot_5: autoDraw = True
+864.6631 	DATA 	Keypress: s
+864.8787 	EXP 	dot_5: autoDraw = False
+864.8787 	EXP 	dot_6: autoDraw = True
+865.8783 	EXP 	dot_6: autoDraw = False
+865.8783 	EXP 	dot_7: autoDraw = True
+866.8783 	EXP 	dot_7: autoDraw = False
+866.8783 	EXP 	dot_8: autoDraw = True
+867.1634 	DATA 	Keypress: s
+867.8791 	EXP 	dot_8: autoDraw = False
+867.8791 	EXP 	dot_9: autoDraw = True
+868.8785 	EXP 	dot_9: autoDraw = False
+868.8785 	EXP 	dot_10: autoDraw = True
+869.6631 	DATA 	Keypress: s
+869.8620 	EXP 	New trial (rep=29, index=0): <Trial 29 (0 in rep 29) data={'thisN': 29, 'thisTrialN': 0, 'thisRepN': 29}>
+869.8781 	EXP 	dot_10: autoDraw = False
+869.8781 	EXP 	dot_1: autoDraw = False
+869.8781 	EXP 	dot_2: autoDraw = False
+869.8781 	EXP 	dot_3: autoDraw = False
+869.8781 	EXP 	dot_4: autoDraw = False
+869.8781 	EXP 	dot_5: autoDraw = False
+869.8781 	EXP 	dot_6: autoDraw = False
+869.8781 	EXP 	dot_7: autoDraw = False
+869.8781 	EXP 	dot_8: autoDraw = False
+869.8781 	EXP 	dot_9: autoDraw = False
+869.8781 	EXP 	dot_10: autoDraw = False
+869.8781 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+869.8781 	EXP 	dot_1: autoDraw = True
+870.8786 	EXP 	dot_1: autoDraw = False
+870.8786 	EXP 	dot_2: autoDraw = True
+871.8785 	EXP 	dot_2: autoDraw = False
+871.8785 	EXP 	dot_3: autoDraw = True
+872.1795 	DATA 	Keypress: s
+872.8787 	EXP 	dot_3: autoDraw = False
+872.8787 	EXP 	dot_4: autoDraw = True
+873.8785 	EXP 	dot_4: autoDraw = False
+873.8785 	EXP 	dot_5: autoDraw = True
+874.6794 	DATA 	Keypress: s
+874.8785 	EXP 	dot_5: autoDraw = False
+874.8785 	EXP 	dot_6: autoDraw = True
+875.8782 	EXP 	dot_6: autoDraw = False
+875.8782 	EXP 	dot_7: autoDraw = True
+876.8784 	EXP 	dot_7: autoDraw = False
+876.8784 	EXP 	dot_8: autoDraw = True
+877.1793 	DATA 	Keypress: s
+877.8783 	EXP 	dot_8: autoDraw = False
+877.8783 	EXP 	dot_9: autoDraw = True
+878.8786 	EXP 	dot_9: autoDraw = False
+878.8786 	EXP 	dot_10: autoDraw = True
+879.6792 	DATA 	Keypress: s
+879.8627 	EXP 	New trial (rep=30, index=0): <Trial 30 (0 in rep 30) data={'thisN': 30, 'thisTrialN': 0, 'thisRepN': 30}>
+879.8782 	EXP 	dot_10: autoDraw = False
+879.8782 	EXP 	dot_1: autoDraw = False
+879.8782 	EXP 	dot_2: autoDraw = False
+879.8782 	EXP 	dot_3: autoDraw = False
+879.8782 	EXP 	dot_4: autoDraw = False
+879.8782 	EXP 	dot_5: autoDraw = False
+879.8782 	EXP 	dot_6: autoDraw = False
+879.8782 	EXP 	dot_7: autoDraw = False
+879.8782 	EXP 	dot_8: autoDraw = False
+879.8782 	EXP 	dot_9: autoDraw = False
+879.8782 	EXP 	dot_10: autoDraw = False
+879.8782 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+879.8782 	EXP 	dot_1: autoDraw = True
+880.8782 	EXP 	dot_1: autoDraw = False
+880.8782 	EXP 	dot_2: autoDraw = True
+881.8782 	EXP 	dot_2: autoDraw = False
+881.8782 	EXP 	dot_3: autoDraw = True
+882.1791 	DATA 	Keypress: s
+882.8781 	EXP 	dot_3: autoDraw = False
+882.8781 	EXP 	dot_4: autoDraw = True
+883.8782 	EXP 	dot_4: autoDraw = False
+883.8782 	EXP 	dot_5: autoDraw = True
+884.6802 	DATA 	Keypress: s
+884.8782 	EXP 	dot_5: autoDraw = False
+884.8782 	EXP 	dot_6: autoDraw = True
+885.8779 	EXP 	dot_6: autoDraw = False
+885.8779 	EXP 	dot_7: autoDraw = True
+886.8781 	EXP 	dot_7: autoDraw = False
+886.8781 	EXP 	dot_8: autoDraw = True
+887.1954 	DATA 	Keypress: s
+887.8780 	EXP 	dot_8: autoDraw = False
+887.8780 	EXP 	dot_9: autoDraw = True
+888.8784 	EXP 	dot_9: autoDraw = False
+888.8784 	EXP 	dot_10: autoDraw = True
+889.6956 	DATA 	Keypress: s
+889.8627 	EXP 	New trial (rep=31, index=0): <Trial 31 (0 in rep 31) data={'thisN': 31, 'thisTrialN': 0, 'thisRepN': 31}>
+889.8780 	EXP 	dot_10: autoDraw = False
+889.8780 	EXP 	dot_1: autoDraw = False
+889.8780 	EXP 	dot_2: autoDraw = False
+889.8780 	EXP 	dot_3: autoDraw = False
+889.8780 	EXP 	dot_4: autoDraw = False
+889.8780 	EXP 	dot_5: autoDraw = False
+889.8780 	EXP 	dot_6: autoDraw = False
+889.8780 	EXP 	dot_7: autoDraw = False
+889.8780 	EXP 	dot_8: autoDraw = False
+889.8780 	EXP 	dot_9: autoDraw = False
+889.8780 	EXP 	dot_10: autoDraw = False
+889.8780 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+889.8780 	EXP 	dot_1: autoDraw = True
+890.8781 	EXP 	dot_1: autoDraw = False
+890.8781 	EXP 	dot_2: autoDraw = True
+891.8779 	EXP 	dot_2: autoDraw = False
+891.8779 	EXP 	dot_3: autoDraw = True
+892.1949 	DATA 	Keypress: s
+892.8782 	EXP 	dot_3: autoDraw = False
+892.8782 	EXP 	dot_4: autoDraw = True
+893.8779 	EXP 	dot_4: autoDraw = False
+893.8779 	EXP 	dot_5: autoDraw = True
+894.6960 	DATA 	Keypress: s
+894.8778 	EXP 	dot_5: autoDraw = False
+894.8778 	EXP 	dot_6: autoDraw = True
+895.8776 	EXP 	dot_6: autoDraw = False
+895.8776 	EXP 	dot_7: autoDraw = True
+896.8779 	EXP 	dot_7: autoDraw = False
+896.8779 	EXP 	dot_8: autoDraw = True
+897.1961 	DATA 	Keypress: s
+897.8788 	EXP 	dot_8: autoDraw = False
+897.8788 	EXP 	dot_9: autoDraw = True
+898.8780 	EXP 	dot_9: autoDraw = False
+898.8780 	EXP 	dot_10: autoDraw = True
+899.7123 	DATA 	Keypress: s
+899.8618 	EXP 	New trial (rep=32, index=0): <Trial 32 (0 in rep 32) data={'thisN': 32, 'thisTrialN': 0, 'thisRepN': 32}>
+899.8777 	EXP 	dot_10: autoDraw = False
+899.8777 	EXP 	dot_1: autoDraw = False
+899.8777 	EXP 	dot_2: autoDraw = False
+899.8777 	EXP 	dot_3: autoDraw = False
+899.8777 	EXP 	dot_4: autoDraw = False
+899.8777 	EXP 	dot_5: autoDraw = False
+899.8777 	EXP 	dot_6: autoDraw = False
+899.8777 	EXP 	dot_7: autoDraw = False
+899.8777 	EXP 	dot_8: autoDraw = False
+899.8777 	EXP 	dot_9: autoDraw = False
+899.8777 	EXP 	dot_10: autoDraw = False
+899.8777 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+899.8777 	EXP 	dot_1: autoDraw = True
+900.8774 	EXP 	dot_1: autoDraw = False
+900.8774 	EXP 	dot_2: autoDraw = True
+901.8778 	EXP 	dot_2: autoDraw = False
+901.8778 	EXP 	dot_3: autoDraw = True
+902.2125 	DATA 	Keypress: s
+902.8777 	EXP 	dot_3: autoDraw = False
+902.8777 	EXP 	dot_4: autoDraw = True
+903.8776 	EXP 	dot_4: autoDraw = False
+903.8776 	EXP 	dot_5: autoDraw = True
+904.6965 	DATA 	Keypress: s
+904.8777 	EXP 	dot_5: autoDraw = False
+904.8777 	EXP 	dot_6: autoDraw = True
+905.8801 	EXP 	dot_6: autoDraw = False
+905.8801 	EXP 	dot_7: autoDraw = True
+906.8776 	EXP 	dot_7: autoDraw = False
+906.8776 	EXP 	dot_8: autoDraw = True
+907.2122 	DATA 	Keypress: s
+907.8780 	EXP 	dot_8: autoDraw = False
+907.8780 	EXP 	dot_9: autoDraw = True
+908.8783 	EXP 	dot_9: autoDraw = False
+908.8783 	EXP 	dot_10: autoDraw = True
+909.7114 	DATA 	Keypress: s
+909.8618 	EXP 	New trial (rep=33, index=0): <Trial 33 (0 in rep 33) data={'thisN': 33, 'thisTrialN': 0, 'thisRepN': 33}>
+909.8775 	EXP 	dot_10: autoDraw = False
+909.8775 	EXP 	dot_1: autoDraw = False
+909.8775 	EXP 	dot_2: autoDraw = False
+909.8775 	EXP 	dot_3: autoDraw = False
+909.8775 	EXP 	dot_4: autoDraw = False
+909.8775 	EXP 	dot_5: autoDraw = False
+909.8775 	EXP 	dot_6: autoDraw = False
+909.8775 	EXP 	dot_7: autoDraw = False
+909.8775 	EXP 	dot_8: autoDraw = False
+909.8775 	EXP 	dot_9: autoDraw = False
+909.8775 	EXP 	dot_10: autoDraw = False
+909.8775 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+909.8775 	EXP 	dot_1: autoDraw = True
+910.8778 	EXP 	dot_1: autoDraw = False
+910.8778 	EXP 	dot_2: autoDraw = True
+911.8774 	EXP 	dot_2: autoDraw = False
+911.8774 	EXP 	dot_3: autoDraw = True
+912.2124 	DATA 	Keypress: s
+912.8777 	EXP 	dot_3: autoDraw = False
+912.8777 	EXP 	dot_4: autoDraw = True
+913.8781 	EXP 	dot_4: autoDraw = False
+913.8781 	EXP 	dot_5: autoDraw = True
+914.7122 	DATA 	Keypress: s
+914.8780 	EXP 	dot_5: autoDraw = False
+914.8780 	EXP 	dot_6: autoDraw = True
+915.8774 	EXP 	dot_6: autoDraw = False
+915.8774 	EXP 	dot_7: autoDraw = True
+916.8775 	EXP 	dot_7: autoDraw = False
+916.8775 	EXP 	dot_8: autoDraw = True
+917.2120 	DATA 	Keypress: s
+917.8774 	EXP 	dot_8: autoDraw = False
+917.8774 	EXP 	dot_9: autoDraw = True
+918.8771 	EXP 	dot_9: autoDraw = False
+918.8771 	EXP 	dot_10: autoDraw = True
+919.7286 	DATA 	Keypress: s
+919.8619 	EXP 	New trial (rep=34, index=0): <Trial 34 (0 in rep 34) data={'thisN': 34, 'thisTrialN': 0, 'thisRepN': 34}>
+919.8773 	EXP 	dot_10: autoDraw = False
+919.8773 	EXP 	dot_1: autoDraw = False
+919.8773 	EXP 	dot_2: autoDraw = False
+919.8773 	EXP 	dot_3: autoDraw = False
+919.8773 	EXP 	dot_4: autoDraw = False
+919.8773 	EXP 	dot_5: autoDraw = False
+919.8773 	EXP 	dot_6: autoDraw = False
+919.8773 	EXP 	dot_7: autoDraw = False
+919.8773 	EXP 	dot_8: autoDraw = False
+919.8773 	EXP 	dot_9: autoDraw = False
+919.8773 	EXP 	dot_10: autoDraw = False
+919.8773 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+919.8773 	EXP 	dot_1: autoDraw = True
+920.8785 	EXP 	dot_1: autoDraw = False
+920.8785 	EXP 	dot_2: autoDraw = True
+921.8773 	EXP 	dot_2: autoDraw = False
+921.8773 	EXP 	dot_3: autoDraw = True
+922.2286 	DATA 	Keypress: s
+922.8769 	EXP 	dot_3: autoDraw = False
+922.8769 	EXP 	dot_4: autoDraw = True
+923.8775 	EXP 	dot_4: autoDraw = False
+923.8775 	EXP 	dot_5: autoDraw = True
+924.7282 	DATA 	Keypress: s
+924.8777 	EXP 	dot_5: autoDraw = False
+924.8777 	EXP 	dot_6: autoDraw = True
+925.8769 	EXP 	dot_6: autoDraw = False
+925.8769 	EXP 	dot_7: autoDraw = True
+926.8768 	EXP 	dot_7: autoDraw = False
+926.8768 	EXP 	dot_8: autoDraw = True
+927.2282 	DATA 	Keypress: s
+927.8771 	EXP 	dot_8: autoDraw = False
+927.8771 	EXP 	dot_9: autoDraw = True
+928.8785 	EXP 	dot_9: autoDraw = False
+928.8785 	EXP 	dot_10: autoDraw = True
+929.7291 	DATA 	Keypress: s
+929.8613 	EXP 	New trial (rep=35, index=0): <Trial 35 (0 in rep 35) data={'thisN': 35, 'thisTrialN': 0, 'thisRepN': 35}>
+929.8772 	EXP 	dot_10: autoDraw = False
+929.8772 	EXP 	dot_1: autoDraw = False
+929.8772 	EXP 	dot_2: autoDraw = False
+929.8772 	EXP 	dot_3: autoDraw = False
+929.8772 	EXP 	dot_4: autoDraw = False
+929.8772 	EXP 	dot_5: autoDraw = False
+929.8772 	EXP 	dot_6: autoDraw = False
+929.8772 	EXP 	dot_7: autoDraw = False
+929.8772 	EXP 	dot_8: autoDraw = False
+929.8772 	EXP 	dot_9: autoDraw = False
+929.8772 	EXP 	dot_10: autoDraw = False
+929.8772 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+929.8772 	EXP 	dot_1: autoDraw = True
+930.8770 	EXP 	dot_1: autoDraw = False
+930.8770 	EXP 	dot_2: autoDraw = True
+931.8768 	EXP 	dot_2: autoDraw = False
+931.8768 	EXP 	dot_3: autoDraw = True
+932.2455 	DATA 	Keypress: s
+932.8770 	EXP 	dot_3: autoDraw = False
+932.8770 	EXP 	dot_4: autoDraw = True
+933.8777 	EXP 	dot_4: autoDraw = False
+933.8777 	EXP 	dot_5: autoDraw = True
+934.7280 	DATA 	Keypress: s
+934.8770 	EXP 	dot_5: autoDraw = False
+934.8770 	EXP 	dot_6: autoDraw = True
+935.8770 	EXP 	dot_6: autoDraw = False
+935.8770 	EXP 	dot_7: autoDraw = True
+936.8770 	EXP 	dot_7: autoDraw = False
+936.8770 	EXP 	dot_8: autoDraw = True
+937.2449 	DATA 	Keypress: s
+937.8769 	EXP 	dot_8: autoDraw = False
+937.8769 	EXP 	dot_9: autoDraw = True
+938.8768 	EXP 	dot_9: autoDraw = False
+938.8768 	EXP 	dot_10: autoDraw = True
+939.7444 	DATA 	Keypress: s
+939.8785 	EXP 	New trial (rep=36, index=0): <Trial 36 (0 in rep 36) data={'thisN': 36, 'thisTrialN': 0, 'thisRepN': 36}>
+939.8930 	EXP 	dot_10: autoDraw = False
+939.8930 	EXP 	dot_1: autoDraw = False
+939.8930 	EXP 	dot_2: autoDraw = False
+939.8930 	EXP 	dot_3: autoDraw = False
+939.8930 	EXP 	dot_4: autoDraw = False
+939.8930 	EXP 	dot_5: autoDraw = False
+939.8930 	EXP 	dot_6: autoDraw = False
+939.8930 	EXP 	dot_7: autoDraw = False
+939.8930 	EXP 	dot_8: autoDraw = False
+939.8930 	EXP 	dot_9: autoDraw = False
+939.8930 	EXP 	dot_10: autoDraw = False
+939.8930 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+939.8930 	EXP 	dot_1: autoDraw = True
+940.8772 	EXP 	dot_2: autoDraw = True
+940.8930 	EXP 	dot_1: autoDraw = False
+941.8931 	EXP 	dot_2: autoDraw = False
+941.8931 	EXP 	dot_3: autoDraw = True
+942.2446 	DATA 	Keypress: s
+942.8932 	EXP 	dot_3: autoDraw = False
+942.8932 	EXP 	dot_4: autoDraw = True
+943.8777 	EXP 	dot_4: autoDraw = False
+943.8777 	EXP 	dot_5: autoDraw = True
+944.7446 	DATA 	Keypress: s
+944.8808 	EXP 	dot_5: autoDraw = False
+944.8808 	EXP 	dot_6: autoDraw = True
+945.8769 	EXP 	dot_6: autoDraw = False
+945.8769 	EXP 	dot_7: autoDraw = True
+946.8772 	EXP 	dot_7: autoDraw = False
+946.8772 	EXP 	dot_8: autoDraw = True
+947.2444 	DATA 	Keypress: s
+947.8929 	EXP 	dot_8: autoDraw = False
+947.8929 	EXP 	dot_9: autoDraw = True
+948.8765 	EXP 	dot_9: autoDraw = False
+948.8765 	EXP 	dot_10: autoDraw = True
+949.7479 	DATA 	Keypress: s
+949.8773 	EXP 	New trial (rep=37, index=0): <Trial 37 (0 in rep 37) data={'thisN': 37, 'thisTrialN': 0, 'thisRepN': 37}>
+949.8928 	EXP 	dot_10: autoDraw = False
+949.8928 	EXP 	dot_1: autoDraw = False
+949.8928 	EXP 	dot_2: autoDraw = False
+949.8928 	EXP 	dot_3: autoDraw = False
+949.8928 	EXP 	dot_4: autoDraw = False
+949.8928 	EXP 	dot_5: autoDraw = False
+949.8928 	EXP 	dot_6: autoDraw = False
+949.8928 	EXP 	dot_7: autoDraw = False
+949.8928 	EXP 	dot_8: autoDraw = False
+949.8928 	EXP 	dot_9: autoDraw = False
+949.8928 	EXP 	dot_10: autoDraw = False
+949.8928 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+949.8928 	EXP 	dot_1: autoDraw = True
+950.8928 	EXP 	dot_1: autoDraw = False
+950.8928 	EXP 	dot_2: autoDraw = True
+951.8932 	EXP 	dot_2: autoDraw = False
+951.8932 	EXP 	dot_3: autoDraw = True
+952.2607 	DATA 	Keypress: s
+952.8932 	EXP 	dot_3: autoDraw = False
+952.8932 	EXP 	dot_4: autoDraw = True
+953.8929 	EXP 	dot_4: autoDraw = False
+953.8929 	EXP 	dot_5: autoDraw = True
+954.7608 	DATA 	Keypress: s
+954.8929 	EXP 	dot_5: autoDraw = False
+954.8929 	EXP 	dot_6: autoDraw = True
+955.8927 	EXP 	dot_6: autoDraw = False
+955.8927 	EXP 	dot_7: autoDraw = True
+956.8927 	EXP 	dot_7: autoDraw = False
+956.8927 	EXP 	dot_8: autoDraw = True
+957.2603 	DATA 	Keypress: s
+957.8926 	EXP 	dot_8: autoDraw = False
+957.8926 	EXP 	dot_9: autoDraw = True
+958.8926 	EXP 	dot_9: autoDraw = False
+958.8926 	EXP 	dot_10: autoDraw = True
+959.7605 	DATA 	Keypress: s
+959.8780 	EXP 	New trial (rep=38, index=0): <Trial 38 (0 in rep 38) data={'thisN': 38, 'thisTrialN': 0, 'thisRepN': 38}>
+959.8926 	EXP 	dot_10: autoDraw = False
+959.8926 	EXP 	dot_1: autoDraw = False
+959.8926 	EXP 	dot_2: autoDraw = False
+959.8926 	EXP 	dot_3: autoDraw = False
+959.8926 	EXP 	dot_4: autoDraw = False
+959.8926 	EXP 	dot_5: autoDraw = False
+959.8926 	EXP 	dot_6: autoDraw = False
+959.8926 	EXP 	dot_7: autoDraw = False
+959.8926 	EXP 	dot_8: autoDraw = False
+959.8926 	EXP 	dot_9: autoDraw = False
+959.8926 	EXP 	dot_10: autoDraw = False
+959.8926 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+959.8926 	EXP 	dot_1: autoDraw = True
+960.8929 	EXP 	dot_1: autoDraw = False
+960.8929 	EXP 	dot_2: autoDraw = True
+961.8925 	EXP 	dot_2: autoDraw = False
+961.8925 	EXP 	dot_3: autoDraw = True
+962.2607 	DATA 	Keypress: s
+962.8924 	EXP 	dot_3: autoDraw = False
+962.8924 	EXP 	dot_4: autoDraw = True
+963.8926 	EXP 	dot_4: autoDraw = False
+963.8926 	EXP 	dot_5: autoDraw = True
+964.7609 	DATA 	Keypress: s
+964.8926 	EXP 	dot_5: autoDraw = False
+964.8926 	EXP 	dot_6: autoDraw = True
+965.8928 	EXP 	dot_6: autoDraw = False
+965.8928 	EXP 	dot_7: autoDraw = True
+966.8926 	EXP 	dot_7: autoDraw = False
+966.8926 	EXP 	dot_8: autoDraw = True
+967.2774 	DATA 	Keypress: s
+967.8925 	EXP 	dot_8: autoDraw = False
+967.8925 	EXP 	dot_9: autoDraw = True
+968.8926 	EXP 	dot_9: autoDraw = False
+968.8926 	EXP 	dot_10: autoDraw = True
+969.7792 	DATA 	Keypress: s
+969.8775 	EXP 	New trial (rep=39, index=0): <Trial 39 (0 in rep 39) data={'thisN': 39, 'thisTrialN': 0, 'thisRepN': 39}>
+969.8922 	EXP 	dot_10: autoDraw = False
+969.8922 	EXP 	dot_1: autoDraw = False
+969.8922 	EXP 	dot_2: autoDraw = False
+969.8922 	EXP 	dot_3: autoDraw = False
+969.8922 	EXP 	dot_4: autoDraw = False
+969.8922 	EXP 	dot_5: autoDraw = False
+969.8922 	EXP 	dot_6: autoDraw = False
+969.8922 	EXP 	dot_7: autoDraw = False
+969.8922 	EXP 	dot_8: autoDraw = False
+969.8922 	EXP 	dot_9: autoDraw = False
+969.8922 	EXP 	dot_10: autoDraw = False
+969.8922 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+969.8922 	EXP 	dot_1: autoDraw = True
+970.8924 	EXP 	dot_1: autoDraw = False
+970.8924 	EXP 	dot_2: autoDraw = True
+971.8772 	EXP 	dot_2: autoDraw = False
+971.8772 	EXP 	dot_3: autoDraw = True
+972.2772 	DATA 	Keypress: s
+972.8921 	EXP 	dot_3: autoDraw = False
+972.8921 	EXP 	dot_4: autoDraw = True
+973.8926 	EXP 	dot_4: autoDraw = False
+973.8926 	EXP 	dot_5: autoDraw = True
+974.7793 	DATA 	Keypress: s
+974.8927 	EXP 	dot_5: autoDraw = False
+974.8927 	EXP 	dot_6: autoDraw = True
+975.8924 	EXP 	dot_6: autoDraw = False
+975.8924 	EXP 	dot_7: autoDraw = True
+976.8921 	EXP 	dot_7: autoDraw = False
+976.8921 	EXP 	dot_8: autoDraw = True
+977.2785 	DATA 	Keypress: s
+977.8925 	EXP 	dot_8: autoDraw = False
+977.8925 	EXP 	dot_9: autoDraw = True
+978.8920 	EXP 	dot_9: autoDraw = False
+978.8920 	EXP 	dot_10: autoDraw = True
+979.7806 	DATA 	Keypress: s
+979.8764 	EXP 	New trial (rep=40, index=0): <Trial 40 (0 in rep 40) data={'thisN': 40, 'thisTrialN': 0, 'thisRepN': 40}>
+979.8921 	EXP 	dot_10: autoDraw = False
+979.8921 	EXP 	dot_1: autoDraw = False
+979.8921 	EXP 	dot_2: autoDraw = False
+979.8921 	EXP 	dot_3: autoDraw = False
+979.8921 	EXP 	dot_4: autoDraw = False
+979.8921 	EXP 	dot_5: autoDraw = False
+979.8921 	EXP 	dot_6: autoDraw = False
+979.8921 	EXP 	dot_7: autoDraw = False
+979.8921 	EXP 	dot_8: autoDraw = False
+979.8921 	EXP 	dot_9: autoDraw = False
+979.8921 	EXP 	dot_10: autoDraw = False
+979.8921 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+979.8921 	EXP 	dot_1: autoDraw = True
+980.8925 	EXP 	dot_1: autoDraw = False
+980.8925 	EXP 	dot_2: autoDraw = True
+981.8922 	EXP 	dot_2: autoDraw = False
+981.8922 	EXP 	dot_3: autoDraw = True
+982.2934 	DATA 	Keypress: s
+982.8924 	EXP 	dot_3: autoDraw = False
+982.8924 	EXP 	dot_4: autoDraw = True
+983.8919 	EXP 	dot_4: autoDraw = False
+983.8919 	EXP 	dot_5: autoDraw = True
+984.7927 	DATA 	Keypress: s
+984.8926 	EXP 	dot_5: autoDraw = False
+984.8926 	EXP 	dot_6: autoDraw = True
+985.8924 	EXP 	dot_6: autoDraw = False
+985.8924 	EXP 	dot_7: autoDraw = True
+986.8920 	EXP 	dot_7: autoDraw = False
+986.8920 	EXP 	dot_8: autoDraw = True
+987.2926 	DATA 	Keypress: s
+987.8920 	EXP 	dot_8: autoDraw = False
+987.8920 	EXP 	dot_9: autoDraw = True
+988.8924 	EXP 	dot_9: autoDraw = False
+988.8924 	EXP 	dot_10: autoDraw = True
+989.7932 	DATA 	Keypress: s
+989.8766 	EXP 	New trial (rep=41, index=0): <Trial 41 (0 in rep 41) data={'thisN': 41, 'thisTrialN': 0, 'thisRepN': 41}>
+989.8921 	EXP 	dot_10: autoDraw = False
+989.8921 	EXP 	dot_1: autoDraw = False
+989.8921 	EXP 	dot_2: autoDraw = False
+989.8921 	EXP 	dot_3: autoDraw = False
+989.8921 	EXP 	dot_4: autoDraw = False
+989.8921 	EXP 	dot_5: autoDraw = False
+989.8921 	EXP 	dot_6: autoDraw = False
+989.8921 	EXP 	dot_7: autoDraw = False
+989.8921 	EXP 	dot_8: autoDraw = False
+989.8921 	EXP 	dot_9: autoDraw = False
+989.8921 	EXP 	dot_10: autoDraw = False
+989.8921 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+989.8921 	EXP 	dot_1: autoDraw = True
+990.8917 	EXP 	dot_1: autoDraw = False
+990.8917 	EXP 	dot_2: autoDraw = True
+991.8922 	EXP 	dot_2: autoDraw = False
+991.8922 	EXP 	dot_3: autoDraw = True
+992.2936 	DATA 	Keypress: s
+992.8921 	EXP 	dot_3: autoDraw = False
+992.8921 	EXP 	dot_4: autoDraw = True
+993.8922 	EXP 	dot_4: autoDraw = False
+993.8922 	EXP 	dot_5: autoDraw = True
+994.7932 	DATA 	Keypress: s
+994.8916 	EXP 	dot_5: autoDraw = False
+994.8916 	EXP 	dot_6: autoDraw = True
+995.8917 	EXP 	dot_6: autoDraw = False
+995.8917 	EXP 	dot_7: autoDraw = True
+996.8922 	EXP 	dot_7: autoDraw = False
+996.8922 	EXP 	dot_8: autoDraw = True
+997.3105 	DATA 	Keypress: s
+997.8917 	EXP 	dot_8: autoDraw = False
+997.8917 	EXP 	dot_9: autoDraw = True
+998.8919 	EXP 	dot_9: autoDraw = False
+998.8919 	EXP 	dot_10: autoDraw = True
+999.8100 	DATA 	Keypress: s
+999.8765 	EXP 	New trial (rep=42, index=0): <Trial 42 (0 in rep 42) data={'thisN': 42, 'thisTrialN': 0, 'thisRepN': 42}>
+999.8917 	EXP 	dot_10: autoDraw = False
+999.8917 	EXP 	dot_1: autoDraw = False
+999.8917 	EXP 	dot_2: autoDraw = False
+999.8917 	EXP 	dot_3: autoDraw = False
+999.8917 	EXP 	dot_4: autoDraw = False
+999.8917 	EXP 	dot_5: autoDraw = False
+999.8917 	EXP 	dot_6: autoDraw = False
+999.8917 	EXP 	dot_7: autoDraw = False
+999.8917 	EXP 	dot_8: autoDraw = False
+999.8917 	EXP 	dot_9: autoDraw = False
+999.8917 	EXP 	dot_10: autoDraw = False
+999.8917 	EXP 	dot_2: borderColor = <psychopy.colors.Color: (-1.0, -1.0, 0.09, 1.0)>
+999.8917 	EXP 	dot_1: autoDraw = True
+1000.8917 	EXP 	dot_1: autoDraw = False
+1000.8917 	EXP 	dot_2: autoDraw = True
+1001.8915 	EXP 	dot_2: autoDraw = False
+1001.8915 	EXP 	dot_3: autoDraw = True
+1002.3101 	DATA 	Keypress: s
+1002.8916 	EXP 	dot_3: autoDraw = False
+1002.8916 	EXP 	dot_4: autoDraw = True
+1003.8922 	EXP 	dot_4: autoDraw = False
+1003.8922 	EXP 	dot_5: autoDraw = True
+1004.5770 	DATA 	Keypress: escape
+1004.7431 	EXP 	fixation_dots_T1weighted: status = STOPPED
+1004.7582 	EXP 	dot_5: autoDraw = False
+1004.7583 	EXP 	fixation_dots_T1weighted: status = STOPPED
+1004.8171 	EXP 	window1: mouseVisible = True
