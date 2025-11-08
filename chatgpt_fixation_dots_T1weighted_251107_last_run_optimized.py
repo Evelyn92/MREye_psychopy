@@ -18,7 +18,7 @@ from psychopy import plugins
 plugins.activatePlugins()
 prefs.hardware['audioLib'] = 'ptb'
 prefs.hardware['audioLatencyMode'] = '3'
-from psychopy import gui, visual, core, data, event, logging, clock, colors, layout, hardware
+from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout, hardware, iohub
 from psychopy.tools import environmenttools
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER, priority)
@@ -456,104 +456,35 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "dots" ---
     dot_1 = []
     dot_1.extend([
-        visual.Circle(
-            win=win,
-            units='deg',
-            edges=64,
-            radius=0.2,
-            lineWidth=0,
-            fillColor=[1, -1, -1],
-            interpolate=True,
-        ),
-        visual.ShapeStim(
-            win=win,
-            units='deg',
-            vertices='cross',
-            size = 0.4,
-            lineWidth=0,
-            fillColor=[-1, 1, 1]
-            ),
-        visual.Circle(
-            win=win,
-            units='deg',
-            edges=64,
-            radius=0.05,
-            lineWidth=0,
-            fillColor=[1, -1, -1],
-            interpolate=True,
-        )
+        visual.Circle(win=win, units='deg', edges=64, radius=0.2, lineWidth=0,
+                       fillColor=[1, -1, -1], interpolate=True, pos=(0,0)),
+        visual.ShapeStim(win=win, units='deg', vertices='cross', size=0.4, lineWidth=0,
+                         fillColor=[-1, 1, 1], pos=(0,0)),
+        visual.Circle(win=win, units='deg', edges=64, radius=0.05, lineWidth=0,
+                       fillColor=[1, -1, -1], interpolate=True, pos=(0,0))
     ])
-    dot_0 = visual.ShapeStim(
-        win=win, name='dot_0',
+
+    # Single fixation dot that will change color over time (replaces dot_2..dot_10)
+    fixDot = visual.ShapeStim(
+        win=win, name='fixDot',
         size=(0.04, 0.04), vertices='circle',
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
-        colorSpace='rgb', lineColor=[1.0000, -1.0000, -1.0000], fillColor=[1.0000, -1.0000, -1.0000],
-        opacity=None, depth=0.0, interpolate=True)
-    dot_2 = visual.ShapeStim(
-        win=win, name='dot_2',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor='white', fillColor=[-1.0000, -1.0000, 0.0902],
+        colorSpace='rgb', lineColor=[-1.0000, -1.0000, 0.0902], fillColor=[-1.0000, -1.0000, 0.0902],
         opacity=None, depth=-1.0, interpolate=True)
-    dot_3 = visual.ShapeStim(
-        win=win, name='dot_3',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[1.0000, 0.0745, -0.4667], fillColor=[1.0000, 0.0745, -0.4667],
-        opacity=None, depth=-2.0, interpolate=True)
-    dot_4 = visual.ShapeStim(
-        win=win, name='dot_4',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-1,1,1], fillColor=[-1,1,1],
-        opacity=None, depth=-3.0, interpolate=True)
-    dot_5 = visual.ShapeStim(
-        win=win, name='dot_5',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[0.4510, 0.4275, 0.4353], fillColor=[0.4510, 0.4275, 0.4353],
-        opacity=None, depth=-4.0, interpolate=True)
-    dot_6 = visual.ShapeStim(
-        win=win, name='dot_6',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[1.0000, 0.7647, -0.6235], fillColor=[1.0000, 0.7647, -0.6235],
-        opacity=None, depth=-5.0, interpolate=True)
-    dot_7 = visual.ShapeStim(
-        win=win, name='dot_7',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-0.15, -0.1, 1], fillColor=[0.2235, -1.0000, 1.0000],
-        opacity=None, depth=-6.0, interpolate=True)
-    dot_8 = visual.ShapeStim(
-        win=win, name='dot_8',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[0.3412, -0.1294, -0.5059], fillColor=[0.3412, -0.1294, -0.5059],
-        opacity=None, depth=-7.0, interpolate=True)
-    dot_9 = visual.ShapeStim(
-        win=win, name='dot_9',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[0.6078, -0.2784, -0.2784], fillColor=[0.6078, -0.2784, -0.2784],
-        opacity=None, depth=-8.0, interpolate=True)
-    dot_10 = visual.ShapeStim(
-        win=win, name='dot_10',
-        size=(0.04, 0.04), vertices='circle',
-        ori=0.0, pos=(0, 0), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor=[-0.0039, 1.0000, 0.6627], fillColor=[-0.0039, 1.0000, 0.6627],
-        opacity=None, depth=-9.0, interpolate=True)
-    
+
+    # Colors previously defined for dot_2..dot_10 (each for ~1 s starting at t=1 s)
+    _fixColors = [
+        [-1.0000, -1.0000, 0.0902],  # was dot_2
+        [ 1.0000,  0.0745, -0.4667], # dot_3
+        [-1.0000,  1.0000,  1.0000], # dot_4
+        [ 0.4510,  0.4275,  0.4353], # dot_5
+        [ 1.0000,  0.7647, -0.6235], # dot_6
+        [ 0.2235, -1.0000,  1.0000], # dot_7
+        [ 0.3412, -0.1294, -0.5059], # dot_8
+        [ 0.6078, -0.2784, -0.2784], # dot_9
+        [-0.0039,  1.0000,  0.6627], # dot_10
+    ]
     # --- Initialize components for Routine "end" ---
     text = visual.TextStim(win=win, name='text',
         text="End press 't'",
@@ -934,12 +865,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine dots
         dots = data.Routine(
             name='dots',
-            components=[*dot_1, dot_2, dot_3, dot_4, dot_5, dot_6, dot_7, dot_8, dot_9, dot_10],
+            components=[*dot_1, fixDot],
         )
         dots.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        dot_2.setLineColor([-1.0000, -1.0000, 0.0902])
+        # removed: was dot_2.setLineColor(...) (redundant with fixDot)
         # store start times for dots
         dots.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         dots.tStart = globalClock.getTime(format='float')
@@ -1008,311 +939,33 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         component_cross.status = FINISHED
                         component_cross.setAutoDraw(False)
 
-            # *dot_2* updates
-            
-            # if dot_2 is starting this frame...
-            if dot_2.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
-                # keep track of start time/frame for later
-                dot_2.frameNStart = frameN  # exact frame index
-                dot_2.tStart = t  # local t and not account for scr refresh
-                dot_2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_2.started')
-                # update status
-                dot_2.status = STARTED
-                dot_2.setAutoDraw(True)
-            
-            # if dot_2 is active this frame...
-            if dot_2.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_2 is stopping this frame...
-            if dot_2.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_2.tStop = t  # not accounting for scr refresh
-                    dot_2.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_2.stopped')
-                    # update status
-                    dot_2.status = FINISHED
-                    dot_2.setAutoDraw(False)
-            
-            # *dot_3* updates
-            
-            # if dot_3 is starting this frame...
-            if dot_3.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
-                # keep track of start time/frame for later
-                dot_3.frameNStart = frameN  # exact frame index
-                dot_3.tStart = t  # local t and not account for scr refresh
-                dot_3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_3.started')
-                # update status
-                dot_3.status = STARTED
-                dot_3.setAutoDraw(True)
-            
-            # if dot_3 is active this frame...
-            if dot_3.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_3 is stopping this frame...
-            if dot_3.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 3-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_3.tStop = t  # not accounting for scr refresh
-                    dot_3.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_3.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_3.stopped')
-                    # update status
-                    dot_3.status = FINISHED
-                    dot_3.setAutoDraw(False)
-            
-            # *dot_4* updates
-            
-            # if dot_4 is starting this frame...
-            if dot_4.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
-                # keep track of start time/frame for later
-                dot_4.frameNStart = frameN  # exact frame index
-                dot_4.tStart = t  # local t and not account for scr refresh
-                dot_4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_4.started')
-                # update status
-                dot_4.status = STARTED
-                dot_4.setAutoDraw(True)
-            
-            # if dot_4 is active this frame...
-            if dot_4.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_4 is stopping this frame...
-            if dot_4.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_4.tStop = t  # not accounting for scr refresh
-                    dot_4.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_4.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_4.stopped')
-                    # update status
-                    dot_4.status = FINISHED
-                    dot_4.setAutoDraw(False)
-            
-            # *dot_5* updates
-            
-            # if dot_5 is starting this frame...
-            if dot_5.status == NOT_STARTED and tThisFlip >= 4-frameTolerance:
-                # keep track of start time/frame for later
-                dot_5.frameNStart = frameN  # exact frame index
-                dot_5.tStart = t  # local t and not account for scr refresh
-                dot_5.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_5, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_5.started')
-                # update status
-                dot_5.status = STARTED
-                dot_5.setAutoDraw(True)
-            
-            # if dot_5 is active this frame...
-            if dot_5.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_5 is stopping this frame...
-            if dot_5.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_5.tStop = t  # not accounting for scr refresh
-                    dot_5.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_5.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_5.stopped')
-                    # update status
-                    dot_5.status = FINISHED
-                    dot_5.setAutoDraw(False)
-            
-            # *dot_6* updates
-            
-            # if dot_6 is starting this frame...
-            if dot_6.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
-                # keep track of start time/frame for later
-                dot_6.frameNStart = frameN  # exact frame index
-                dot_6.tStart = t  # local t and not account for scr refresh
-                dot_6.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_6, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_6.started')
-                # update status
-                dot_6.status = STARTED
-                dot_6.setAutoDraw(True)
-            
-            # if dot_6 is active this frame...
-            if dot_6.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_6 is stopping this frame...
-            if dot_6.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 6-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_6.tStop = t  # not accounting for scr refresh
-                    dot_6.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_6.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_6.stopped')
-                    # update status
-                    dot_6.status = FINISHED
-                    dot_6.setAutoDraw(False)
-            
-            # *dot_7* updates
-            
-            # if dot_7 is starting this frame...
-            if dot_7.status == NOT_STARTED and tThisFlip >= 6-frameTolerance:
-                # keep track of start time/frame for later
-                dot_7.frameNStart = frameN  # exact frame index
-                dot_7.tStart = t  # local t and not account for scr refresh
-                dot_7.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_7, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_7.started')
-                # update status
-                dot_7.status = STARTED
-                dot_7.setAutoDraw(True)
-            
-            # if dot_7 is active this frame...
-            if dot_7.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_7 is stopping this frame...
-            if dot_7.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 7-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_7.tStop = t  # not accounting for scr refresh
-                    dot_7.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_7.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_7.stopped')
-                    # update status
-                    dot_7.status = FINISHED
-                    dot_7.setAutoDraw(False)
-            
-            # *dot_8* updates
-            
-            # if dot_8 is starting this frame...
-            if dot_8.status == NOT_STARTED and tThisFlip >= 7-frameTolerance:
-                # keep track of start time/frame for later
-                dot_8.frameNStart = frameN  # exact frame index
-                dot_8.tStart = t  # local t and not account for scr refresh
-                dot_8.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_8, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_8.started')
-                # update status
-                dot_8.status = STARTED
-                dot_8.setAutoDraw(True)
-            
-            # if dot_8 is active this frame...
-            if dot_8.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_8 is stopping this frame...
-            if dot_8.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 8-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_8.tStop = t  # not accounting for scr refresh
-                    dot_8.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_8.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_8.stopped')
-                    # update status
-                    dot_8.status = FINISHED
-                    dot_8.setAutoDraw(False)
-            
-            # *dot_9* updates
-            
-            # if dot_9 is starting this frame...
-            if dot_9.status == NOT_STARTED and tThisFlip >= 8-frameTolerance:
-                # keep track of start time/frame for later
-                dot_9.frameNStart = frameN  # exact frame index
-                dot_9.tStart = t  # local t and not account for scr refresh
-                dot_9.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_9, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_9.started')
-                # update status
-                dot_9.status = STARTED
-                dot_9.setAutoDraw(True)
-            
-            # if dot_9 is active this frame...
-            if dot_9.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_9 is stopping this frame...
-            if dot_9.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 9-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_9.tStop = t  # not accounting for scr refresh
-                    dot_9.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_9.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_9.stopped')
-                    # update status
-                    dot_9.status = FINISHED
-                    dot_9.setAutoDraw(False)
-            
-            # *dot_10* updates
-            
-            # if dot_10 is starting this frame...
-            if dot_10.status == NOT_STARTED and tThisFlip >= 9-frameTolerance:
-                # keep track of start time/frame for later
-                dot_10.frameNStart = frameN  # exact frame index
-                dot_10.tStart = t  # local t and not account for scr refresh
-                dot_10.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_10, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_10.started')
-                # update status
-                dot_10.status = STARTED
-                dot_10.setAutoDraw(True)
-            
-            # if dot_10 is active this frame...
-            if dot_10.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_10 is stopping this frame...
-            if dot_10.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_10.tStop = t  # not accounting for scr refresh
-                    dot_10.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_10.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_10.stopped')
-                    # update status
-                    dot_10.status = FINISHED
-                    dot_10.setAutoDraw(False)
+            # *fixDot* updates (replaces dot_2..dot_10)
+            # Start at t>=1s, stop at t>10s, change color every 1s from the list above
+            if fixDot.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+                fixDot.frameNStart = frameN
+                fixDot.tStart = t
+                fixDot.tStartRefresh = tThisFlipGlobal
+                win.timeOnFlip(fixDot, 'tStartRefresh')
+                thisExp.timestampOnFlip(win, 'fixDot.started')
+                fixDot.status = STARTED
+                fixDot.setAutoDraw(True)
+
+            if fixDot.status == STARTED:
+                # Which 1-second bin are we in relative to t=1?
+                idx = int(np.floor(t)) - 1
+                if 0 <= idx < len(_fixColors):
+                    c = _fixColors[idx]
+                    # Update both fill and line colors; log=False to avoid clutter
+                    fixDot.setFillColor(c, log=False)
+                    fixDot.setLineColor(c, log=False)
+                # stop at t>10s
+                if tThisFlip > 10.0 - frameTolerance:
+                    fixDot.tStop = t
+                    fixDot.tStopRefresh = tThisFlipGlobal
+                    fixDot.frameNStop = frameN
+                    thisExp.timestampOnFlip(win, 'fixDot.stopped')
+                    fixDot.status = FINISHED
+                    fixDot.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):

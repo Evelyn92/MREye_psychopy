@@ -454,6 +454,27 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     
     # --- Initialize components for Routine "dots" ---
+
+def _make_ccc(win, pos, base_color, outer_radius=0.2, inner_radius=0.05, cross_size=0.4):
+    # derive cross color as complement-ish (invert in rgb space)
+    try:
+        cross_color = [-c for c in base_color]
+    except Exception:
+        cross_color = [1, -1, -1]
+    group = [
+        visual.Circle(win=win, units='deg', edges=64, radius=outer_radius,
+                      lineWidth=0, fillColor=base_color, interpolate=True, pos=pos),
+        visual.ShapeStim(win=win, units='deg', vertices='cross', size=cross_size,
+                         lineWidth=0, fillColor=cross_color, pos=pos),
+        visual.Circle(win=win, units='deg', edges=64, radius=inner_radius,
+                      lineWidth=0, fillColor=base_color, interpolate=True, pos=pos),
+    ]
+    for g in group:
+        try:
+            g.status = NOT_STARTED
+        except Exception:
+            pass
+    return group
     dot_1 = []
     dot_1.extend([
         visual.Circle(
@@ -497,6 +518,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor=[-1.0000, -1.0000, 0.0902],
         opacity=None, depth=-1.0, interpolate=True)
+    dot_2_grp = _make_ccc(win, pos=dot_2.pos, base_color=dot_2.fillColor)
+
     dot_3 = visual.ShapeStim(
         win=win, name='dot_3',
         size=(0.04, 0.04), vertices='circle',
@@ -504,6 +527,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[1.0000, 0.0745, -0.4667], fillColor=[1.0000, 0.0745, -0.4667],
         opacity=None, depth=-2.0, interpolate=True)
+    dot_3_grp = _make_ccc(win, pos=dot_3.pos, base_color=dot_3.fillColor)
+
     dot_4 = visual.ShapeStim(
         win=win, name='dot_4',
         size=(0.04, 0.04), vertices='circle',
@@ -511,6 +536,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-1,1,1], fillColor=[-1,1,1],
         opacity=None, depth=-3.0, interpolate=True)
+    dot_4_grp = _make_ccc(win, pos=dot_4.pos, base_color=dot_4.fillColor)
+
     dot_5 = visual.ShapeStim(
         win=win, name='dot_5',
         size=(0.04, 0.04), vertices='circle',
@@ -518,6 +545,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[0.4510, 0.4275, 0.4353], fillColor=[0.4510, 0.4275, 0.4353],
         opacity=None, depth=-4.0, interpolate=True)
+    dot_5_grp = _make_ccc(win, pos=dot_5.pos, base_color=dot_5.fillColor)
+
     dot_6 = visual.ShapeStim(
         win=win, name='dot_6',
         size=(0.04, 0.04), vertices='circle',
@@ -525,6 +554,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[1.0000, 0.7647, -0.6235], fillColor=[1.0000, 0.7647, -0.6235],
         opacity=None, depth=-5.0, interpolate=True)
+    dot_6_grp = _make_ccc(win, pos=dot_6.pos, base_color=dot_6.fillColor)
+
     dot_7 = visual.ShapeStim(
         win=win, name='dot_7',
         size=(0.04, 0.04), vertices='circle',
@@ -532,6 +563,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-0.15, -0.1, 1], fillColor=[0.2235, -1.0000, 1.0000],
         opacity=None, depth=-6.0, interpolate=True)
+    dot_7_grp = _make_ccc(win, pos=dot_7.pos, base_color=dot_7.fillColor)
+
     dot_8 = visual.ShapeStim(
         win=win, name='dot_8',
         size=(0.04, 0.04), vertices='circle',
@@ -539,6 +572,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[0.3412, -0.1294, -0.5059], fillColor=[0.3412, -0.1294, -0.5059],
         opacity=None, depth=-7.0, interpolate=True)
+    dot_8_grp = _make_ccc(win, pos=dot_8.pos, base_color=dot_8.fillColor)
+
     dot_9 = visual.ShapeStim(
         win=win, name='dot_9',
         size=(0.04, 0.04), vertices='circle',
@@ -546,6 +581,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[0.6078, -0.2784, -0.2784], fillColor=[0.6078, -0.2784, -0.2784],
         opacity=None, depth=-8.0, interpolate=True)
+    dot_9_grp = _make_ccc(win, pos=dot_9.pos, base_color=dot_9.fillColor)
+
     dot_10 = visual.ShapeStim(
         win=win, name='dot_10',
         size=(0.04, 0.04), vertices='circle',
@@ -553,6 +590,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=[-0.0039, 1.0000, 0.6627], fillColor=[-0.0039, 1.0000, 0.6627],
         opacity=None, depth=-9.0, interpolate=True)
+    dot_10_grp = _make_ccc(win, pos=dot_10.pos, base_color=dot_10.fillColor)
+
     
     # --- Initialize components for Routine "end" ---
     text = visual.TextStim(win=win, name='text',
@@ -1008,618 +1047,202 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         component_cross.status = FINISHED
                         component_cross.setAutoDraw(False)
 
-            # *dot_2* updates
-            
-            # if dot_2 is starting this frame...
-            if dot_2.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
-                # keep track of start time/frame for later
-                dot_2.frameNStart = frameN  # exact frame index
-                dot_2.tStart = t  # local t and not account for scr refresh
-                dot_2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_2.started')
-                # update status
-                dot_2.status = STARTED
-                dot_2.setAutoDraw(True)
-            
-            # if dot_2 is active this frame...
-            if dot_2.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_2 is stopping this frame...
-            if dot_2.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_2.tStop = t  # not accounting for scr refresh
-                    dot_2.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_2.stopped')
-                    # update status
-                    dot_2.status = FINISHED
-                    dot_2.setAutoDraw(False)
-            
-            # *dot_3* updates
-            
-            # if dot_3 is starting this frame...
-            if dot_3.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
-                # keep track of start time/frame for later
-                dot_3.frameNStart = frameN  # exact frame index
-                dot_3.tStart = t  # local t and not account for scr refresh
-                dot_3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_3.started')
-                # update status
-                dot_3.status = STARTED
-                dot_3.setAutoDraw(True)
-            
-            # if dot_3 is active this frame...
-            if dot_3.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_3 is stopping this frame...
-            if dot_3.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 3-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_3.tStop = t  # not accounting for scr refresh
-                    dot_3.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_3.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_3.stopped')
-                    # update status
-                    dot_3.status = FINISHED
-                    dot_3.setAutoDraw(False)
-            
-            # *dot_4* updates
-            
-            # if dot_4 is starting this frame...
-            if dot_4.status == NOT_STARTED and tThisFlip >= 3-frameTolerance:
-                # keep track of start time/frame for later
-                dot_4.frameNStart = frameN  # exact frame index
-                dot_4.tStart = t  # local t and not account for scr refresh
-                dot_4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_4.started')
-                # update status
-                dot_4.status = STARTED
-                dot_4.setAutoDraw(True)
-            
-            # if dot_4 is active this frame...
-            if dot_4.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_4 is stopping this frame...
-            if dot_4.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 4-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_4.tStop = t  # not accounting for scr refresh
-                    dot_4.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_4.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_4.stopped')
-                    # update status
-                    dot_4.status = FINISHED
-                    dot_4.setAutoDraw(False)
-            
-            # *dot_5* updates
-            
-            # if dot_5 is starting this frame...
-            if dot_5.status == NOT_STARTED and tThisFlip >= 4-frameTolerance:
-                # keep track of start time/frame for later
-                dot_5.frameNStart = frameN  # exact frame index
-                dot_5.tStart = t  # local t and not account for scr refresh
-                dot_5.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_5, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_5.started')
-                # update status
-                dot_5.status = STARTED
-                dot_5.setAutoDraw(True)
-            
-            # if dot_5 is active this frame...
-            if dot_5.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_5 is stopping this frame...
-            if dot_5.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_5.tStop = t  # not accounting for scr refresh
-                    dot_5.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_5.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_5.stopped')
-                    # update status
-                    dot_5.status = FINISHED
-                    dot_5.setAutoDraw(False)
-            
-            # *dot_6* updates
-            
-            # if dot_6 is starting this frame...
-            if dot_6.status == NOT_STARTED and tThisFlip >= 5-frameTolerance:
-                # keep track of start time/frame for later
-                dot_6.frameNStart = frameN  # exact frame index
-                dot_6.tStart = t  # local t and not account for scr refresh
-                dot_6.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_6, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_6.started')
-                # update status
-                dot_6.status = STARTED
-                dot_6.setAutoDraw(True)
-            
-            # if dot_6 is active this frame...
-            if dot_6.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_6 is stopping this frame...
-            if dot_6.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 6-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_6.tStop = t  # not accounting for scr refresh
-                    dot_6.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_6.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_6.stopped')
-                    # update status
-                    dot_6.status = FINISHED
-                    dot_6.setAutoDraw(False)
-            
-            # *dot_7* updates
-            
-            # if dot_7 is starting this frame...
-            if dot_7.status == NOT_STARTED and tThisFlip >= 6-frameTolerance:
-                # keep track of start time/frame for later
-                dot_7.frameNStart = frameN  # exact frame index
-                dot_7.tStart = t  # local t and not account for scr refresh
-                dot_7.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_7, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_7.started')
-                # update status
-                dot_7.status = STARTED
-                dot_7.setAutoDraw(True)
-            
-            # if dot_7 is active this frame...
-            if dot_7.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_7 is stopping this frame...
-            if dot_7.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 7-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_7.tStop = t  # not accounting for scr refresh
-                    dot_7.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_7.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_7.stopped')
-                    # update status
-                    dot_7.status = FINISHED
-                    dot_7.setAutoDraw(False)
-            
-            # *dot_8* updates
-            
-            # if dot_8 is starting this frame...
-            if dot_8.status == NOT_STARTED and tThisFlip >= 7-frameTolerance:
-                # keep track of start time/frame for later
-                dot_8.frameNStart = frameN  # exact frame index
-                dot_8.tStart = t  # local t and not account for scr refresh
-                dot_8.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_8, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_8.started')
-                # update status
-                dot_8.status = STARTED
-                dot_8.setAutoDraw(True)
-            
-            # if dot_8 is active this frame...
-            if dot_8.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_8 is stopping this frame...
-            if dot_8.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 8-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_8.tStop = t  # not accounting for scr refresh
-                    dot_8.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_8.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_8.stopped')
-                    # update status
-                    dot_8.status = FINISHED
-                    dot_8.setAutoDraw(False)
-            
-            # *dot_9* updates
-            
-            # if dot_9 is starting this frame...
-            if dot_9.status == NOT_STARTED and tThisFlip >= 8-frameTolerance:
-                # keep track of start time/frame for later
-                dot_9.frameNStart = frameN  # exact frame index
-                dot_9.tStart = t  # local t and not account for scr refresh
-                dot_9.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_9, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_9.started')
-                # update status
-                dot_9.status = STARTED
-                dot_9.setAutoDraw(True)
-            
-            # if dot_9 is active this frame...
-            if dot_9.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_9 is stopping this frame...
-            if dot_9.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 9-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_9.tStop = t  # not accounting for scr refresh
-                    dot_9.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_9.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_9.stopped')
-                    # update status
-                    dot_9.status = FINISHED
-                    dot_9.setAutoDraw(False)
-            
-            # *dot_10* updates
-            
-            # if dot_10 is starting this frame...
-            if dot_10.status == NOT_STARTED and tThisFlip >= 9-frameTolerance:
-                # keep track of start time/frame for later
-                dot_10.frameNStart = frameN  # exact frame index
-                dot_10.tStart = t  # local t and not account for scr refresh
-                dot_10.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(dot_10, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'dot_10.started')
-                # update status
-                dot_10.status = STARTED
-                dot_10.setAutoDraw(True)
-            
-            # if dot_10 is active this frame...
-            if dot_10.status == STARTED:
-                # update params
-                pass
-            
-            # if dot_10 is stopping this frame...
-            if dot_10.status == STARTED:
-                # is it time to stop? (based on local clock)
-                if tThisFlip > 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    dot_10.tStop = t  # not accounting for scr refresh
-                    dot_10.tStopRefresh = tThisFlipGlobal  # on global time
-                    dot_10.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'dot_10.stopped')
-                    # update status
-                    dot_10.status = FINISHED
-                    dot_10.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, win=win)
-                return
-            # pause experiment here if requested
-            if thisExp.status == PAUSED:
-                pauseExperiment(
-                    thisExp=thisExp, 
-                    win=win, 
-                    timers=[routineTimer], 
-                    playbackComponents=[],
-                    ioServer=ioServer
-                )
-                # skip the frame we paused on
-                continue
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                dots.forceEnded = routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in dots.components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # --- Ending Routine "dots" ---
-        for thisComponent in dots.components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        # store stop times for dots
-        dots.tStop = globalClock.getTime(format='float')
-        dots.tStopRefresh = tThisFlipGlobal
-        thisExp.addData('dots.stopped', dots.tStop)
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if dots.maxDurationReached:
-            routineTimer.addTime(-dots.maxDuration)
-        elif dots.forceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-10.000000)
-        thisExp.nextEntry()
-        
-    # completed 1.0 repeats of 'T1w_LIBRE'
+            # *dot_2* updates (replaced with circle–cross–circle)
+            for component_cross in dot_2_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_2.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (2.0 - 1.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_2.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_3* updates (replaced with circle–cross–circle)
+            for component_cross in dot_3_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 2.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_3.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (3.0 - 2.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_3.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_4* updates (replaced with circle–cross–circle)
+            for component_cross in dot_4_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_4.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (4.0 - 3.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_4.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_5* updates (replaced with circle–cross–circle)
+            for component_cross in dot_5_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 4.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_5.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (5.0 - 4.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_5.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_6* updates (replaced with circle–cross–circle)
+            for component_cross in dot_6_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 5.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_6.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (6.0 - 5.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_6.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_7* updates (replaced with circle–cross–circle)
+            for component_cross in dot_7_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 6.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_7.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (7.0 - 6.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_7.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_8* updates (replaced with circle–cross–circle)
+            for component_cross in dot_8_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 7.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_8.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (8.0 - 7.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_8.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_9* updates (replaced with circle–cross–circle)
+            for component_cross in dot_9_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 8.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_9.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (9.0 - 8.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_9.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
+    # *dot_10* updates (replaced with circle–cross–circle)
+            for component_cross in dot_10_grp:
+                if component_cross.status == NOT_STARTED and tThisFlip >= 9.0-frameTolerance:
+                    component_cross.frameNStart = frameN
+                    component_cross.tStart = t
+                    component_cross.tStartRefresh = tThisFlipGlobal
+                    win.timeOnFlip(component_cross, 'tStartRefresh')
+                    thisExp.timestampOnFlip(win, 'dot_10.started')
+                    component_cross.status = STARTED
+                    component_cross.setAutoDraw(True)
+                
+                if component_cross.status == STARTED:
+                    pass
+                
+                if component_cross.status == STARTED:
+                    if tThisFlipGlobal > component_cross.tStartRefresh + (10.0 - 9.0)-frameTolerance:
+                        component_cross.tStop = t
+                        component_cross.tStopRefresh = tThisFlipGlobal
+                        component_cross.frameNStop = frameN
+                        thisExp.timestampOnFlip(win, 'dot_10.stopped')
+                        component_cross.status = FINISHED
+                        component_cross.setAutoDraw(False)
     
-    if thisSession is not None:
-        # if running in a Session with a Liaison client, send data up to now
-        thisSession.sendExperimentData()
-    
-    # --- Prepare to start Routine "end" ---
-    # create an object to store info about Routine end
-    end = data.Routine(
-        name='end',
-        components=[text, ET_stop, key_resp_3],
-    )
-    end.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # create starting attributes for key_resp_3
-    key_resp_3.keys = []
-    key_resp_3.rt = []
-    _key_resp_3_allKeys = []
-    # store start times for end
-    end.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    end.tStart = globalClock.getTime(format='float')
-    end.status = STARTED
-    thisExp.addData('end.started', end.tStart)
-    end.maxDuration = None
-    # keep track of which components have finished
-    endComponents = end.components
-    for thisComponent in end.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "end" ---
-    end.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *text* updates
-        
-        # if text is starting this frame...
-        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text.started')
-            # update status
-            text.status = STARTED
-            text.setAutoDraw(True)
-        
-        # if text is active this frame...
-        if text.status == STARTED:
-            # update params
-            pass
-        
-        # *ET_stop* updates
-        if ET_stop.status == NOT_STARTED:
-            ET_stop.frameNStart = frameN  # exact frame index
-            ET_stop.tStart = t  # local t and not account for scr refresh
-            ET_stop.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(ET_stop, 'tStartRefresh')  # time at next scr refresh
-            ET_stop.status = STARTED
-        
-        # if ET_stop is stopping this frame...
-        if ET_stop.status == STARTED:
-            # is it time to stop? (based on local clock)
-            if tThisFlip > 1.0-frameTolerance:
-                # keep track of stop time/frame for later
-                ET_stop.tStop = t  # not accounting for scr refresh
-                ET_stop.tStopRefresh = tThisFlipGlobal  # on global time
-                ET_stop.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'ET_stop.stopped')
-                # update status
-                ET_stop.status = FINISHED
-                ET_stop.stop()
-        
-        # *key_resp_3* updates
-        waitOnFlip = False
-        
-        # if key_resp_3 is starting this frame...
-        if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp_3.frameNStart = frameN  # exact frame index
-            key_resp_3.tStart = t  # local t and not account for scr refresh
-            key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp_3.started')
-            # update status
-            key_resp_3.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp_3.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_3.getKeys(keyList=['t'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_3_allKeys.extend(theseKeys)
-            if len(_key_resp_3_allKeys):
-                key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
-                key_resp_3.rt = _key_resp_3_allKeys[-1].rt
-                key_resp_3.duration = _key_resp_3_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer], 
-                playbackComponents=[],
-                ioServer=ioServer
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            end.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in end.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "end" ---
-    for thisComponent in end.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for end
-    end.tStop = globalClock.getTime(format='float')
-    end.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('end.stopped', end.tStop)
-    # check responses
-    if key_resp_3.keys in ['', [], None]:  # No response was made
-        key_resp_3.keys = None
-    thisExp.addData('key_resp_3.keys',key_resp_3.keys)
-    if key_resp_3.keys != None:  # we had a response
-        thisExp.addData('key_resp_3.rt', key_resp_3.rt)
-        thisExp.addData('key_resp_3.duration', key_resp_3.duration)
-        if key_resp_3.keys in ['s', 'S']:
-            ioServer.getDevice('tracker').sendMessage("Key s trigger response")
-    thisExp.nextEntry()
-    # the Routine "end" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # mark experiment as finished
-    endExperiment(thisExp, win=win)
-
-
-def saveData(thisExp):
-    """
-    Save data from this experiment
-    
-    Parameters
-    ==========
-    thisExp : psychopy.data.ExperimentHandler
-        Handler object for this experiment, contains the data to save and information about 
-        where to save it to.
-    """
-    filename = thisExp.dataFileName
-    # these shouldn't be strictly necessary (should auto-save)
-    thisExp.saveAsWideText(filename + '.csv', delim='auto')
-    thisExp.saveAsPickle(filename)
-
-
-def endExperiment(thisExp, win=None):
-    """
-    End this experiment, performing final shut down operations.
-    
-    This function does NOT close the window or end the Python process - use `quit` for this.
-    
-    Parameters
-    ==========
-    thisExp : psychopy.data.ExperimentHandler
-        Handler object for this experiment, contains the data to save and information about 
-        where to save it to.
-    win : psychopy.visual.Window
-        Window for this experiment.
-    """
-    if win is not None:
-        # remove autodraw from all current components
-        win.clearAutoDraw()
-        # Flip one final time so any remaining win.callOnFlip() 
-        # and win.timeOnFlip() tasks get executed
-        win.flip()
-    # return console logger level to WARNING
-    logging.console.setLevel(logging.WARNING)
-    # mark experiment handler as finished
-    thisExp.status = FINISHED
-    logging.flush()
-
-
-def quit(thisExp, win=None, thisSession=None):
-    """
-    Fully quit, closing the window and ending the Python process.
-    
-    Parameters
-    ==========
-    win : psychopy.visual.Window
-        Window to close.
-    thisSession : psychopy.session.Session or None
-        Handle of the Session object this experiment is being run from, if any.
-    """
-    thisExp.abort()  # or data files will save again on exit
-    # make sure everything is closed down
-    if win is not None:
-        # Flip one final time so any remaining win.callOnFlip() 
-        # and win.timeOnFlip() tasks get executed before quitting
-        win.flip()
-        win.close()
-    logging.flush()
-    if thisSession is not None:
-        thisSession.stop()
-    # terminate Python process
-    core.quit()
-
-
-# if running this experiment as a script...
-if __name__ == '__main__':
-    # call all functions in order
-    expInfo = showExpInfoDlg(expInfo=expInfo)
-    thisExp = setupData(expInfo=expInfo)
-    logFile = setupLogging(filename=thisExp.dataFileName)
-    win = setupWindow(expInfo=expInfo)
-    setupDevices(expInfo=expInfo, thisExp=thisExp, win=win)
-    run(
-        expInfo=expInfo, 
-        thisExp=thisExp, 
-        win=win,
-        globalClock='float'
-    )
-    saveData(thisExp=thisExp)
-    quit(thisExp=thisExp, win=win)
