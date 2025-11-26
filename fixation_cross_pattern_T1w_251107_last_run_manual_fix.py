@@ -253,7 +253,7 @@ def setupDevices(expInfo, thisExp, win):
         'name': 'tracker',
         'model_name': 'EYELINK 1000 DESKTOP',
         'simulation_mode': False,
-        'network_settings': '100.1.1',
+        'network_settings': '100.1.1.1',
         'default_native_data_file_name': 'EXPFILE',
         'runtime_settings': {
             'sampling_rate': 1000.0,
@@ -406,7 +406,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         'name': 'tracker',
         'model_name': 'EYELINK 1000 DESKTOP',
         'simulation_mode': False,
-        'network_settings': '100.1.1',
+        'network_settings': '100.1.1.1',
         'default_native_data_file_name': 'JB1',
         'runtime_settings': {
             'sampling_rate': 1000.0,
